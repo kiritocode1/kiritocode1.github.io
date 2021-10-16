@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+ margin: 0px;
+ padding: 0px;
+ font-family: Consolas, monaco, monospace;
+ background: black;
+}
+
+#main{
+ width: 100%;
+ height:100vh;
+ position: relative;
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top : 0;
+  left: 0;  
+  width:100%;
+  background-color:rgb(29, 27, 27);
+   box-shadow: 5px 10px 10px grey;
+  z-index:1;
+  border-radius:20px;
+}
+nav:hover{
+  border-radius: 40px;
+  box-shadow: 5px 10px 10px grey;
+  transition: all ease 1s;
+}
+
+
+
+
+.logo img{
+ height:45px ;
+ border-radius: 45px;
+ 
+
+
+
+
+
+
+
+
+}
+.logo img:hover{
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px whitesmoke,-5px -5px 5px gray,4px -5px 10px black,-5px 5px 5px blue;
+  transition: all ease 0.4s;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.menu li a{
+  height: 40px;
+  padding: 0px 22px;
+  line-height: 43px;
+  flex-wrap: wrap;
+  margin: 3px;
+  display: flex;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+
+
+
+
+}
+
+a{
+  text-decoration: none;
+  flex-wrap: wrap;
+
+}
+.hi{
+  color: white;
+  font-weight:500; 
+    flex-wrap: wrap;
+  font-size:1em;
+  border-bottom: 1em greenyellow;
+  border-radius: 0.5em;
+}
+.hi:hover{
+ background-color: whitesmoke;
+ color: rgb(236, 9, 236);
+ box-shadow: 2px 4px 4px purple , -2px -4px 4px green;
+ transition: all ease 0.02s;
+
+}
+.main-img{
+  width:400px;
+  height:400px;
+
+}
+.main-img img{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+  border-radius:40px;
+  transition: all ease 1s;
+}
+.main-img img:hover{
+  border-radius: 400px;
+   box-shadow:2px 4px 20px purple, -2px -4px 10px greenyellow , -2px -4px 20px dodgerblue, -2px 4px 10px yellow , 2px -4px 10px royalblue;
+}
+
+.content{
+  display: flex;
+    flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+    left: 10%;
+    right:2%;
+    height:100% ;
+}
+
+.main-text {
+  color: white;
+  width: 500px;
+    flex-wrap: wrap;
+}
+
+.main-text h1{
+  font-size: 3.5em;
+    flex-wrap: wrap;
+  color:white;
+  margin: 0px 0px 10px 0px;
+  line-height: 60px
+}
+
+.main-text p {
+  color: purple;
+  font-style: initial;
+
+}
+
+.resume-btn{
+  width: 190px;
+  height:44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color: rgb(180, 21, 180);
+  border-radius: 20px;
+  
+}
+
+.resume-btn:hover{
+  background-color:white;
+ color: purple;
+  transition:all ease 0.4s;
+  box-shadow:2px 4px 2px purple, -2px -4px 2px greenyellow , -2px -4px 2px dodgerblue;
+}
+
+.menu li a:hover{
+  background-color:white;
+  color: purple;
+  border-radius: 20px;
+  transition: all ease 0.07s;
+   box-shadow:2px 4px 2px white, -2px -4px 2px rgb(243, 17, 243), -2px -4px 4px white, 2px 0px 4px yellow,-2px -5px 5px blue; 
+}
+
+.main-img::after:hover{
+  border-radius: 400px;
+
+}
