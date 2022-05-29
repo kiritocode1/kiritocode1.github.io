@@ -6,6 +6,22 @@
 html{
 scroll-behavior:smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Major+Mono+Display&family=Space+Mono:ital@1&display=swap');
+
+.hid{
+
+  font-family: 'Flow Circular', cursive;
+}
+
+.mono_1{
+  color: white;
+  font-family: 'Major Mono Display', monospace;
+}
+.mono_2{
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
 
 body{
  margin: 0px;
@@ -60,7 +76,7 @@ nav:hover{
 }
 .logo img:hover{
   border-radius: 40px;
-  box-shadow: 5px 5px 5px whitesmoke,-5px -5px 5px gray,4px -5px 10px black,-5px 5px 5px blue;
+
   transition: all ease 0.4s;
 }
 
