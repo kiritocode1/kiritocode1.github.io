@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*! =============fonts ============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+.mono_text1 {
+  font-family: 'Fira Code', monospace;
+}
+
+.mono_text2 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+
+/* =========== */
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
+.hand_text1 {
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+
+
+
+
+
+/* ============= */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+
+.barcode {
+  font-family: 'Libre Barcode 39', cursive;
+}
+
+/* =================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+.japan_text1{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* !====== */
+
+
+.red{
+  color: rgb(255, 0, 64);
+  font-weight: 400;
+}
+
+.white{
+  color:white;
+  background-color: black;
+  height: 100%;
+  width: 190px;
+}
