@@ -1,3 +1,8 @@
+<div style="width:full; display:flex; justify-content:center; ">
+<img src="../kiritocode1.github.io/public/kirito..png" style="width:100px; border-radius:50px; height:100px;">
+</div>
+
+
 <h1 style="font-family:Consolas,monaco,monospace; color:red;">HEY this is kiritocode1 / aryan 👹<h1>
 
 
