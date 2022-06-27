@@ -1,13 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-
+// import { useSpring,animated as a } from "react-spring";
 function App() {
   return (
-    <div className=" App white">
-      <h2 className={`mono_text2`}> Work in progress. coding with <b classname="red">❤</b> </h2>
-            <h1 className={`japan_text1 red`}> 
-        愛している </h1>
-      
+    <div className='App white'>
+      <div className=' mono_text2 animate-pulse'>Work in progress , made W/ 🖤 </div>
+      <div className="japan_text1 text-red-700">愛している </div>
+      {/* <div style={}/> */}
     </div>
 
   );

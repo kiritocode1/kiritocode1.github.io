@@ -42,3 +42,8 @@ code {
 .barcode{
   font-family: 'Libre Barcode 39', cursive;
 }
+
+/*? Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
