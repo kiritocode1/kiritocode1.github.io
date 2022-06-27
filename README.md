@@ -1,5 +1,5 @@
 <div style="width:full; display:flex; justify-content:center; ">
-<img src="../kiritocode1.github.io/public/kirito..png" style="width:100px; border-radius:50px; height:100px;">
+<img src="https://github.com/kiritocode1/kiritocode1.github.io/blob/main/public/kirito..png" style="width:100px; border-radius:50px; height:100px;">
 </div>
 
 
