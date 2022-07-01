@@ -1,8 +1,10 @@
 import { useSpring, animated as a } from "react-spring";
 import {useState,useEffect as UseE} from "react";
-// import logo from './logo.svg';
 import './App.css';
-// import { useSpring,animated as a } from "react-spring";
+
+
+import Home from "./components/Home/home";
+
 function App() {
   const [col, setcol] = useState(false);
   const [insert, setint] = useState([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
@@ -18,6 +20,7 @@ function App() {
   return (
     <div className='App'>
       <div className={`${col?"white":""}`}>
+      <Home/>
       <div className=' mono_text2 animate-pulse'>Work in progress , made W/ {!col?"🖤":"❤️👹"} </div>       
       <div className="japan_text1 text-red-700 justify-center">愛している </div>
       <div className="w-full flex items-center justify-center">
