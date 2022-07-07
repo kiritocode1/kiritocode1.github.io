@@ -18,7 +18,7 @@ function App() {
     randomise_btwn_01();
   }, [col]);
   return (
-    <div className='App' onLoad={setint("super")}>
+    <div className='App' >
       <div className={`${col?"white":""}`}>
       <Home/>
       <div className=' mono_text2 animate-pulse'>Work in progress , made W/ {!col?"🖤":"❤️👹"} </div>       
