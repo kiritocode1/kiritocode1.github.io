@@ -4,8 +4,8 @@ import './App.css';
 //   import randomize from "./components/Randomize";
     
 import Home from "./components/Home/home";
-import { Routes, Route } from "react-router-dom";
-
+import { Routes, Route, Link } from "react-router-dom";
+import Music from "./components/Music/index";
 function App() {
   // const [col, setcol] = useState(false);
   // // const [insert, setint] = useState([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
@@ -29,13 +29,13 @@ function App() {
 
       <Home/>
       </div> */}
-      
+      <h1>hello wold</h1>
       <Routes>
         <Route path='/' element={<Home />} />
-        
+        <Route path="/m" element={<Music/>}/>
       </Routes>
-
-
+      <Link to="/" className='font-mono text-3xl text-red-500 hover:underline underline-offset-2'>home</Link>
+      <Link to="/m" className='font-mono text-3xl text-red-500 hover:underline underline-offset-6'>Music</Link>
 
 
 
