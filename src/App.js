@@ -34,8 +34,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path="/m" element={<Music/>}/>
       </Routes>
-      <Link to="/" className='font-mono text-3xl text-red-500 hover:underline underline-offset-2'>home</Link>
-      <Link to="/m" className='font-mono text-3xl text-red-500 hover:underline underline-offset-6'>Music</Link>
+      <Link to="/" className='font-mono text-3xl text-red-500 hover:underline focus:text-sky-500'>home</Link>
+      <Link to="/m" className='font-mono text-3xl text-red-500 hover:underline focus:text-indigo-500'>Music</Link>
 
 
 
