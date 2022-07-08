@@ -1,8 +1,8 @@
 // import { useSpring, animated as a } from "react-spring";
 // import {useState,useEffect as UseE} from "react";
 import './App.css';
-// import randomize from "./components/Randomize";
-
+//   import randomize from "./components/Randomize";
+    
 import Home from "./components/Home/home";
 import { Routes, Route } from "react-router-dom";
 
