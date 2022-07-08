@@ -28,7 +28,6 @@ function App() {
         <div>{randomize(0, 1)}</div>
 
       <Home/>
-      </div>
       <h1>hello wold</h1>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -36,6 +35,7 @@ function App() {
       </Routes>
       <Link to="/" className='font-mono text-3xl text-red-500 hover:underline focus:text-sky-500'>home</Link>
       <Link to="/m" className='font-mono text-3xl text-red-500 hover:underline focus:text-indigo-500'>Music</Link>
+      </div>
 
 
 
