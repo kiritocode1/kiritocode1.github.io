@@ -12,6 +12,9 @@ function App() {
   const stykle = useSpring({
     backgroundColor:col?"red":"white"
   });
+  UseE(()=>{
+    console.log("hello world");
+  },[])
   UseE(() => {
     const a = randomize();
     console.log(a);
@@ -31,7 +34,7 @@ function App() {
       <h1>hello wold</h1>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path="/m" element={<Music/>}/>
+        <Route path="/:music" element={<Music/>}/>
       </Routes>
       <Link to="/" className='font-mono text-3xl text-red-500 hover:underline focus:text-sky-500'>home</Link>
         <Link to="/m" className='font-mono text-3xl text-red-500 hover:underline focus:text-indigo-500'>Music</Link>
