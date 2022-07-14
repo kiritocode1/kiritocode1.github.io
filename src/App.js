@@ -159,8 +159,15 @@ function App() {
 </div>
 </div>
 
-      <div className='py-20  w-full flex items-center justify-evenly'>
-        <div class="radial-progress" style={{"--value":70}}>70%</div>
+      <div className='my-20  w-full flex items-center justify-evenly h-60'>
+        <div class="radial-progress text-primary" style={{ "--value": 70 , "--size":'12rem'}}>70%</div>
+        <div className='flex flex-col justify-evenly h-full'>
+        <progress class="progress progress-secondary w-56" value="0" max="100"></progress>
+<progress class="progress progress-secondary w-56" value="10" max="100"></progress>
+<progress class="progress progress-secondary w-56" value="40" max="100"></progress>
+<progress class="progress progress-secondary w-56" value="70" max="100"></progress>
+          <progress class="progress progress-secondary w-56" value="100" max="100"></progress>
+          </div>
       </div>
 
 
