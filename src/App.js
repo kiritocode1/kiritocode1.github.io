@@ -64,7 +64,7 @@ function App() {
 
 
 
-
+{/* first ui  */}
       
       <div className="w-full flex items-center justify-evenly">
       
@@ -96,7 +96,7 @@ function App() {
   <svg className="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
   
       </label>
-      <input type="checkbox" className="toggle"  />
+      <input type="checkbox" className="toggle toggle-accent"  />
       
 <label for="my-modal-6" className="btn modal-button">open modal</label>
 
@@ -113,6 +113,22 @@ function App() {
       </div>
       </div>
 
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* second UI  */}
       <div className="w-full flex items-center justify-between px-20 mt-20">
       <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
@@ -127,7 +143,7 @@ function App() {
 
 
 <div class="mockup-phone">
-  <div class="camera">notch</div> 
+  <div class="camera"></div> 
   <div class="display">
           <div class="artboard artboard-demo phone-1">
             
@@ -143,8 +159,9 @@ function App() {
 </div>
 </div>
 
-
-
+      <div className='py-20  w-full flex items-center justify-evenly'>
+        <div class="radial-progress" style={{"--value":70}}>70%</div>
+      </div>
 
 
 
@@ -157,8 +174,8 @@ function App() {
     <a href='https://twitter.com/kirito08922920'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
     </a> 
 
-        <a href='https://www.facebook.com/aryan.kathawale.16/' className=" w-8 h-8"><FaGithub className="w-full h-6"/></a>
-          <a href='https://www.facebook.com/aryan.kathawale.16/' className=" w-8 h-8"><SiMedium className="w-full h-6" /></a>
+        <a href='https://www.github.com/kiritocode1' className=" w-8 h-8"><FaGithub className="w-full h-6"/></a>
+          <a href='https://medium.com/@kathawalearyan' className=" w-8 h-8"><SiMedium className="w-full h-6" /></a>
             <a href='https://www.facebook.com/aryan.kathawale.16/' className=" w-8 h-8"><BsLinkedin className="w-full h-6"/></a>
   </div>
 </footer>
