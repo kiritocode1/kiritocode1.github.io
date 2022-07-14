@@ -63,10 +63,19 @@ function App() {
 
 
 
+      
+
+
+
+
+
+
+
+
 
 {/* first ui  */}
       
-      <div className="w-full flex items-center justify-evenly">
+      <div className="w-full    sm:flex   items-center justify-evenly">
       
         <div class="rating">
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -129,7 +138,7 @@ function App() {
 
 
       {/* second UI  */}
-      <div className="w-full flex items-center justify-between px-20 mt-20">
+      <div className="w-full sm:flex items-center justify-between px-20 mt-20">
       <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
   <div className="card-body">
@@ -167,8 +176,33 @@ function App() {
 <progress class="progress progress-secondary w-56" value="40" max="100"></progress>
 <progress class="progress progress-secondary w-56" value="70" max="100"></progress>
           <progress class="progress progress-secondary w-56" value="100" max="100"></progress>
-          </div>
+        </div>
+        
+        <div className="flex gap-2">
+          <button class="btn btn-outline">Button</button>
+<button class="btn btn-outline btn-primary">Button</button>
+<button class="btn btn-outline btn-secondary">Button</button>
+<button class="btn btn-outline btn-accent">Button</button>
+        </div>
+        <div >
+          <input type="range" min="0" max="100" class="range range-secondary range-lg" />
+          
+        </div>
       </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
 
 
 
