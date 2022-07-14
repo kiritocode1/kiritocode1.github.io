@@ -5,7 +5,8 @@
 
 const randomize = (min, max) => {
     const random = Math.random();
-    return (random  * (max-min +1))+ min;
+    const answer = (random * (max - min + 1)) + min;
+    return answer >=0.5 ? 1 : 0; 
 };
 
 

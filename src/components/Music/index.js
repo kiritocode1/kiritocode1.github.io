@@ -1,9 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 const Music = () => {
-  const {music} = useParams();
+  // const {music} = useParams();
   return (
-    <div>{music}</div>
+    <div>
+      <img src="../../../src/logo.svg" alt="nice wow !" />
+    </div>
   )
 };
 
