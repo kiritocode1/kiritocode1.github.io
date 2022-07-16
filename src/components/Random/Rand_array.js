@@ -10,4 +10,5 @@ const Randarray = (length,breadth) => {
     });
     console.log(detailed_mapped_array);
 };
-Randarray(13, 12);
+
+export default Randarray;
