@@ -7,7 +7,7 @@ import './App.css';
 // import { Routes, Route, Link } from "react-router-dom";
 // import Music from "./components/Music/index";
 
-
+//! imports for finalization                    
 import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
@@ -204,7 +204,7 @@ function App() {
 
 
 
-
+{/* ! finalization importing .  */}
 
 <footer class="footer items-center p-4 bg-neutral text-neutral-content">
   <div class="items-center grid-flow-col">
