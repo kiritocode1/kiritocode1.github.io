@@ -10,5 +10,5 @@ const Randarray = (length,breadth) => {
     });
     console.log(detailed_mapped_array);
 };
-
+// Randarray(12,2) checked 
 export default Randarray;

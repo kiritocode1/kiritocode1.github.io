@@ -1,11 +1,18 @@
 // import { useSpring, animated as a } from "react-spring";
-// import {useState,useEffect as UseE} from "react";
+import {useEffect as UseE} from "react";
 import './App.css';
 //   import randomize from "./components/Randomize";
     
 // import Home from "./components/Home/home";
 // import { Routes, Route, Link } from "react-router-dom";
 // import Music from "./components/Music/index";
+
+
+
+import { themeChange } from 'theme-change'
+
+
+
 
 //! imports for finalization                    
 import { SiMedium } from "react-icons/si";
@@ -17,9 +24,10 @@ function App() {
   // const stykle = useSpring({
   //   backgroundColor:col?"red":"white"
   // });
-  // UseE(()=>{
-  //   console.log("hello world");
-  // },[])
+  UseE(()=>{
+    console.log("hello world");
+    themeChange(false);
+  },[])
   // UseE(() => {
   //   const a = randomize();
   //   console.log(a);
@@ -59,7 +67,7 @@ function App() {
   </div>
       </div>
       </div>
-      <h1>UI themes :</h1>
+      <h1 className='font-mono text-5xl text-accent'>UI themes :</h1>
 
 
 
@@ -78,11 +86,11 @@ function App() {
       <div className="w-full    sm:flex   items-center justify-evenly">
       
         <div class="rating">
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400"  />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400" />
+  <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400"  />
 </div>
         
         
@@ -110,7 +118,7 @@ function App() {
 <label for="my-modal-6" className="btn modal-button">open modal</label>
 
 
-<input type="checkbox" id="my-modal-6" className="modal-toggle" />
+<input type="checkbox" id="my-modal-6" className="modal-toggle"  data-toggle-theme="dark,light" data-act-class="ACTIVECLASS"/>
 <div className="modal modal-bottom sm:modal-middle">
   <div className="modal-box">
     <h3 className="font-bold text-lg">Congratulations random Internet user!</h3>
