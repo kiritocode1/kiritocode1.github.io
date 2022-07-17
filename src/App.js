@@ -1,15 +1,15 @@
 // import { useSpring, animated as a } from "react-spring";
-import {useEffect as UseE} from "react";
+// import {useEffect as UseE} from "react";
 import './App.css';
 //   import randomize from "./components/Randomize";
     
 // import Home from "./components/Home/home";
 // import { Routes, Route, Link } from "react-router-dom";
 // import Music from "./components/Music/index";
+// import { useState } from "react";
 
 
 
-import { themeChange } from 'theme-change'
 
 
 
@@ -24,10 +24,7 @@ function App() {
   // const stykle = useSpring({
   //   backgroundColor:col?"red":"white"
   // });
-  UseE(()=>{
-    console.log("hello world");
-    themeChange(false);
-  },[])
+
   // UseE(() => {
   //   const a = randomize();
   //   console.log(a);
@@ -43,7 +40,7 @@ function App() {
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div className="flex flex-col">
     <span className="countdown font-mono text-5xl">
-      <span style={{"--value":30}}></span>
+      <span style={{"--value":20}}></span>
     </span>
     days
   </div> 
@@ -83,7 +80,7 @@ function App() {
 
 {/* first ui  */}
       
-      <div className="w-full    sm:flex   items-center justify-evenly">
+      <div className="w-full       md:flex md:flex-row flex flex-col  gap-9 items-center justify-evenly">
       
         <div class="rating">
   <input type="radio" name="rating-2" class="mask mask-star-2 bg-sky-400" />
