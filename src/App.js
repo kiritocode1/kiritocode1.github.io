@@ -1,35 +1,32 @@
-// import { useSpring, animated as a } from "react-spring";
-// import {useEffect as UseE} from "react";
+//? styles here . 
 import './App.css';
-//   import randomize from "./components/Randomize";
-    
-// import Home from "./components/Home/home";
-// import { Routes, Route, Link } from "react-router-dom";
-// import Music from "./components/Music/index";
-// import { useState } from "react";
-
-import countdown from './components/time_left/time';
 
 
-
-import { useEffect , useState } from 'react';
 
 //! imports for finalization                    
 import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
+import { useState,useEffect } from "react";
 function App() {
-  // const [col, setcol] = useState(false);
-  // // const [insert, setint] = useState([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
-  // const stykle = useSpring({
-  //   backgroundColor:col?"red":"white"
-  // });
-  // const seconds = countdown[3];
-  // UseE(() => {
-    
-  // },[seconds])
-  const { seconds, setsec } = useState(0);
-  
+  const nice = new Date();
+      const [clock, setClock] = useState([37 -nice.getDate(), 24, 60, 60]);
+
+
+// On Mount
+  useEffect(() => {
+
+
+    const timer = () => {
+
+
+    setTimeout(timer, 1000);
+    };
+    timer();
+  });
+
+
+
   return (
     <div className='App ' >
       <h1 className='text-3xl font-mono animate-pulse'>Coding with love 🖤</h1>
@@ -41,25 +38,25 @@ function App() {
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div className="flex flex-col">
     <span className="countdown font-mono text-5xl">
-      <span style={{"--value":20}}></span>
+      <span style={{"--value":clock[0]}}></span>
     </span>
     days
   </div> 
   <div className="flex flex-col">
     <span className="countdown font-mono text-5xl">
-      <span style={{"--value":10}}></span>
+      <span style={{"--value":clock[1]}}></span>
     </span>
     hours
   </div> 
   <div className="flex flex-col">
     <span className="countdown font-mono text-5xl">
-      <span style={{"--value":24}}></span>
+      <span style={{"--value":clock[2]}}></span>
     </span>
     min
   </div> 
   <div className="flex flex-col">
     <span className="countdown font-mono text-5xl">
-            <span style={{ "--value":countdown[3]()}}></span>
+            <span style={{ "--value":clock[3]}}></span>
     </span>
     sec
   </div>
