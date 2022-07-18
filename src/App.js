@@ -7,7 +7,7 @@ import './App.css';
 import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import { useState,useEffect } from "react";
+import {useEffect,useState } from "react";
 function App() {
   const nice = new Date();
       const [clock, setClock] = useState([37 -nice.getDate(), 24, 60, 60]);
@@ -20,7 +20,9 @@ function App() {
     const timer = () => {
 
 
-    setTimeout(timer, 1000);
+
+
+    setTimeout(timer, 3000);
     };
     timer();
   });
