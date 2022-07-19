@@ -7,70 +7,20 @@ import './App.css';
 import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import {useEffect,useState } from "react";
+
+
+
+
+import Stars from './components/display_stars/stars';
+
+
+
+
 function App() {
-  const nice = new Date();
-      const [clock, setClock] = useState([37 -nice.getDate(), 24, 60, 60]);
-
-
-// On Mount
-  useEffect(() => {
-
-
-    const timer = () => {
-
-
-
-
-    setTimeout(timer, 3000);
-    };
-    timer();
-  });
-
-
 
   return (
     <div className='App ' >
-      <h1 className='text-3xl font-mono animate-pulse'>Coding with love 🖤</h1>
-      <div className='w-full flex  justify-center py-20'>
-
-
-
-
-      <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-  <div className="flex flex-col">
-    <span className="countdown font-mono text-5xl">
-      <span style={{"--value":clock[0]}}></span>
-    </span>
-    days
-  </div> 
-  <div className="flex flex-col">
-    <span className="countdown font-mono text-5xl">
-      <span style={{"--value":clock[1]}}></span>
-    </span>
-    hours
-  </div> 
-  <div className="flex flex-col">
-    <span className="countdown font-mono text-5xl">
-      <span style={{"--value":clock[2]}}></span>
-    </span>
-    min
-  </div> 
-  <div className="flex flex-col">
-    <span className="countdown font-mono text-5xl">
-            <span style={{ "--value":clock[3]}}></span>
-    </span>
-    sec
-  </div>
-      </div>
-      </div>
-      <h1 className=' text-5xl text-accent w-full text-center mono_text2'>UI themes :</h1>
-
-
-
-      
-
-
+      <Stars/>
 
 
 
@@ -150,7 +100,7 @@ function App() {
     <h2 className="card-title">Shoes!</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary btn-outline">Buy Now</button>
     </div>
   </div>
 </div>
