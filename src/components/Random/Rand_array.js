@@ -8,7 +8,7 @@ const Randarray = (row,columns) => {
         })
         return i = explode;
     });
-    console.log(detailed_mapped_array);
+    // console.log(detailed_mapped_array);
     return detailed_mapped_array;
 };
 // Randarray(12,2) checked 
