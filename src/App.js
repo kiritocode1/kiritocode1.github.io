@@ -19,12 +19,20 @@ import Stars from './components/display_stars/stars';
 //? Rating 5 ⭐
 import RateFront from './components/Rating_system/Rate_front';
 
+//? toggle done ✅
+import Toggle from './components/toggle/toggle';
+
+//? phone done ✅
+import Phone from './components/phone/phone';
+
+//? modal_prime done 
+import ModalPrime from './components/Modal/Modal_prime';
 
 function App() {
 
   return (
     <div className='App ' >
-      <Stars className="z-1"/>
+
 
 
 
@@ -37,16 +45,16 @@ function App() {
       <div className="w-full       md:flex md:flex-row flex flex-col  gap-9 items-center justify-evenly">
  
         
-        
+        <ModalPrime btn_text={"L"} Heading={"this is L "} text={"this is the text"} close_btn={"btn close"}/>
         
         
         
         <RateFront/>
-        
+        <Phone />
 
         
         
-      <input type="checkbox" className="toggle toggle-accent"  />
+
       
       
 <label for="my-modal-6" className="btn modal-button">open modal</label>
@@ -98,17 +106,6 @@ function App() {
 </div>
 
 
-<div class="mockup-phone">
-  <div class="camera"></div> 
-  <div class="display">
-          <div class="artboard artboard-demo phone-1">
-            
-            
-            <img src='https://images.greetingsisland.com/images/cards/holidays/previews/i-love-my-mom.png?auto=format,compress&w=440' alt="cute" className="h-full overflow-scroll " />
-            
-    </div>
-  </div>
-</div>
 <div class="mockup-code">
   <pre data-prefix="$"><code className="animate-pulse">npx kiritocode1</code></pre>
   <pre data-prefix=">" class="text-warning"><code>for easter egg</code></pre>

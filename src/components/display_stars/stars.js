@@ -1,7 +1,7 @@
 import Rand_array from "../Random/Rand_array";
 
 import React from 'react'
-const foo = Rand_array(63,52);
+const foo = Rand_array(7,52);
 const Stars = () => {
   return (
         <div className="text-primary  gap-2 hidden md:flex md:flex-col">
