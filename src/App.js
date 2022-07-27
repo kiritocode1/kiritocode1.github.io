@@ -3,30 +3,40 @@ import './App.css';
 
 
 
-//! imports for finalization                    
+//! imports for icons                    
 import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
 
+//? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////
 
-//? Random Starry_sky Generator
+
+//? Random Starry_sky Generator✅
 import Stars from './components/display_stars/stars';
 
-// ? DAY-Night Theme Switch . lol .
+// ? DAY-Night Theme Switch . lol .✅
 // import ModeSwap from './components/light_dark';
 
-//? Rating 5 ⭐
-import RateFront from './components/Rating_system/Rate_front';
+//? Rating 5 ✅
+// import RateFront from './components/Rating_system/Rate_front';
 
 //? toggle done ✅
-import Toggle from './components/toggle/toggle';
+// import Toggle from './components/toggle/toggle';
 
 //? phone done ✅
-import Phone from './components/phone/phone';
+// import Phone from './components/phone/phone';
 
-//? modal_prime done 
-import ModalPrime from './components/Modal/Modal_prime';
+//? modal_prime done ✅
+// import ModalPrime from './components/Modal/Modal_prime';
+
+//? ModelPrompt done ✅
+// import ModelImg from './components/Model/ModelImg';
+
+
+
+
+// ! ///////////////////////////////////////////////////////////////////////////////////////////
 
 function App() {
 
@@ -40,44 +50,6 @@ function App() {
 
 
 
-{/* first ui  */}
-      
-      <div className="w-full       md:flex md:flex-row flex flex-col  gap-9 items-center justify-evenly">
- 
-        
-        <ModalPrime btn_text={"L"} Heading={"this is L "} text={"this is the text"} close_btn={"btn close"}/>
-        
-        
-        
-        <RateFront/>
-        <Phone />
-
-        
-        
-
-      
-      
-<label for="my-modal-6" className="btn modal-button">open modal</label>
-
-
-<input type="checkbox" id="my-modal-6" className="modal-toggle"  data-toggle-theme="dark,light" data-act-class="ACTIVECLASS"/>
-<div className="modal modal-bottom sm:modal-middle">
-  <div className="modal-box">
-    <h3 className="font-bold text-lg">Congratulations random Internet user!</h3>
-    <p className="py-4">You've been selected for a chance to get one year of subscription to use ME for free! just get me a cuppa cofee ☕</p>
-    <div className="modal-action">
-      <label for="my-modal-6" className="btn">Yay!</label>
-    </div>
-  </div>
-        </div>
-        
-
-
-
-
-      </div>
-
-      
 
 
 
@@ -88,32 +60,8 @@ function App() {
 
 
 
-
-
-
-
-      {/* second UI  */}
-      <div className="w-full    md:flex md:flex-row flex flex-col items-center justify-between px-20 mt-20">
-      <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary btn-outline">Buy Now</button>
-    </div>
-  </div>
-</div>
-
-
-<div class="mockup-code">
-  <pre data-prefix="$"><code className="animate-pulse">npx kiritocode1</code></pre>
-  <pre data-prefix=">" class="text-warning"><code>for easter egg</code></pre>
-        </div>
-        
-      </div>
       <div className='my-20  w-full    md:flex md:flex-row flex flex-col items-center justify-evenly md:h-96 gap-10   '>
-        <div class="radial-progress text-primary" style={{ "--value": 70 , "--size":'12rem'}}>70%</div>
+        <div class="radial-progress text-accent" style={{ "--value": 70 , "--size":'12rem'}}><h1 className='text-3xl font-bold mono_text1'>70%</h1></div>
         <div className='flex flex-col justify-evenly md:h-full items-center gap-4 '>
         <progress class="progress progress-secondary w-56" value="0" max="100"></progress>
 <progress class="progress progress-secondary w-56" value="10" max="100"></progress>
@@ -127,10 +75,6 @@ function App() {
 <button class="btn btn-outline btn-primary">Button</button>
 <button class="btn btn-outline btn-secondary">Button</button>
 <button class="btn btn-outline btn-accent">Button</button>
-        </div>
-        <div >
-          <input type="range" min="0" max="100" class="range range-secondary range-lg" />
-          
         </div>
       </div>
 
@@ -165,7 +109,7 @@ function App() {
   </div>
 </footer>
 
-{/* APP end */}
+{/*//* APP end */}
       </div>
   );
 }
