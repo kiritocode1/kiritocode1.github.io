@@ -34,7 +34,8 @@ import Stars from './components/display_stars/stars';
 // import ModelImg from './components/Model/ModelImg';
 
 
-
+//! Navbar 
+import NavSm from './components/NavBar/NavBar';
 
 // ! ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -43,9 +44,9 @@ function App() {
   return (
     <div className='App ' >
 
+<Stars/>
 
-
-
+<NavSm/>
 
 
 
