@@ -3,7 +3,7 @@ const Randarray = (row,columns) => {
     var detailed_mapped_array = crude_array.map((i) => {
         const explode = i.map((j) => {
             // return j + Math.round(Math.random());
-            const a = Math.random() <= 0.95 ? 0 : 1;
+            const a = Math.random() <= 0.90 ? 0 : 1;
             return j + a;
         })
         return i = explode;
@@ -12,4 +12,5 @@ const Randarray = (row,columns) => {
     return detailed_mapped_array;
 };
 // Randarray(12,2) checked 
+
 export default Randarray;
