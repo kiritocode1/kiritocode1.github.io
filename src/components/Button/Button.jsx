@@ -1,8 +1,8 @@
 import React from 'react'
 
-const MainButton = ({ Color,value}) => {
+const MainButton = ({ Color="primary",value="btn" ,theme=""}) => {
     return (
-    <button className={`btn btn-outline btn-${Color}`}>{value}</button>
+    <button data-set-theme={theme}  data-act-class="ACTIVECLASS" className={`btn btn-outline btn-${Color}`}>{value}</button>
   );
 }
 

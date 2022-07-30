@@ -30,7 +30,7 @@ import Toggle from './components/toggle/toggle';
 
 
 //? Main Button Done ✅
-// import MainButton from './components/Button/Button';
+import MainButton from './components/Button/Button';
 
 
 //! Navbar 
@@ -59,7 +59,43 @@ useEffect(() => {
     <div className='App ' >
 
       <Stars />
-      <Toggle/>
+      <MainButton Color='neutral' />
+      <MainButton theme='dark' />
+      <MainButton theme='coffee' />
+      <MainButton theme='lofi' />
+      <MainButton theme='garden' />
+      <MainButton theme='cupcake' />
+      <MainButton theme='emerland' />
+      <MainButton theme='corporate' />
+      <MainButton theme='synthwave' />
+      <MainButton theme='retro' />
+      <MainButton theme='valentine'/>
+      <MainButton theme='halloween' />
+      <MainButton theme='business' />
+      <MainButton theme='dracula' />
+      <MainButton theme='wireframe' />
+      <MainButton theme='black'/>
+      <MainButton theme='pastel' />
+      <MainButton theme='cmyk' />
+      <MainButton theme='acid' />
+      <MainButton theme='lemonade' />
+      <MainButton theme='winter'/>
+      <MainButton theme='fantasy' />
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 <End/>
 
 
