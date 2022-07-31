@@ -30,7 +30,7 @@ import Stars from './components/display_stars/stars';
 
 
 //? Main Button Done ✅
-// import MainButton from './components/Button/Button';
+import MainButton from './components/Button/Button';
 
 
 //! Navbar 
@@ -71,7 +71,7 @@ function App() {
 
       <Stars />
       <NavBar/>
-      {/* <MainButton Color='neutral'  value='neutral'/>
+      <MainButton Color='neutral'  value='neutral'/>
       <MainButton theme='dark'  value='dark'/>
       <MainButton theme='coffee' value='coffee' />
       <MainButton theme='lofi' value='lofi'/>
@@ -96,16 +96,22 @@ function App() {
       
 
       
-       */}
+      
 
       <div className="font-extrabold font-mono md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">HeLlo WoRld!</div>
 
-      <a.div style={{...ask}} className={"w-20 h-20 bg-red-500 "}>
+      <a.div style={{...ask,delay:1200}} className={"w-20 h-20 bg-red-500 "}>
 
       </a.div>
-      
-      
-<End/>
+      <div className='h-96 '>
+        <div className="text-primary font-4xl">primary</div>
+        <div  className="text-secondary font-4xl">secondary</div>
+        < div  className="text-neutral font-4xl">neutral</div>
+        <div  className="text-accent font-4xl">accent</div>
+
+      </div>
+      <footer><End/></footer>
+
 
 
 {/*//* APP end */}
