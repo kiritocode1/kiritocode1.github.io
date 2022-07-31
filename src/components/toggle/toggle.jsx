@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Toggle = ({color ,theme="dark"}) => {
+const Toggle = ({color}) => {
     return (
-        <input type="checkbox"  data-toggle-theme={theme} className={`toggle toggle-${color}`} />
+        <input type="checkbox"  className={`toggle toggle-${color}`} />
     );
 };
 
