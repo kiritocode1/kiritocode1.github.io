@@ -26,13 +26,19 @@ code {
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:ital,wght@1,300&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+
 .mono_text1{
   font-family: 'Fira Code', monospace;
 }
 .mono_text2{
   font-family: 'Source Code Pro', monospace;
 }
-
+.mono_text3{
+  font-family: 'Major Mono Display', monospace;
+}
 
 
 /* =========== */

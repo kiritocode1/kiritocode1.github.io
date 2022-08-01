@@ -4,10 +4,10 @@ import './App.css';
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
-//? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////
+//? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import CircularProgress from './components/CircularProgress/CircularProgress';
-//? Random Starry_sky Generator✅
+//? Random Starry_sky Generator✅ ;
 import Stars from './components/display_stars/stars';
 
 // ? DAY-Night Theme Switch . lol .✅
@@ -58,11 +58,10 @@ function App() {
   const ask = useSpring(
     {
       from: { x: 0 },
-      to: { x: 180 },
-      loop: {reverse:true},
-
+      to: { x: 300 },
+      loop: { reverse: true },
     }
-  )
+  );
 
 
 
@@ -92,22 +91,19 @@ function App() {
       <MainButton theme='acid'  value='acid'/>
       <MainButton theme='lemonade'  value='lemonade'/>
       <MainButton theme='winter' value='winter'/>
-
       
 
       
-      
+      <div className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">Hello WoRld!</div>
 
-      <div className="font-extrabold font-mono md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">HeLlo WoRld!</div>
-
-      <a.div style={{...ask,delay:1200}} className={"w-20 h-20 bg-red-500 "}>
+      <a.div style={{...ask,delay:5000}} className={"w-20 h-20 bg-accent"}>
 
       </a.div>
-      <div className='h-96 '>
-        <div className="text-primary font-4xl">primary</div>
-        <div  className="text-secondary font-4xl">secondary</div>
-        < div  className="text-neutral font-4xl">neutral</div>
-        <div  className="text-accent font-4xl">accent</div>
+      <div className=' '>
+        <div className="text-primary text-4xl">primary</div>
+        <div  className="text-secondary text-4xl">secondary</div>
+        < div  className="text-neutral text-4xl">neutral</div>
+        <div  className="text-accent text-4xl">accent</div>
 
       </div>
       <footer><End/></footer>
