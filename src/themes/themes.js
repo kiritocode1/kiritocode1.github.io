@@ -1,3 +1,8 @@
-const themey = ["lofi", "dark", "garden", "cupcake", "coffee", "emerland", "corporate", "synthwave", "retro", "valentine", "halloween", "business", "dracula", "wireframe", "black", "pastel", "cmyk", "acid", "lemonade", "winter"]
 
-export default themey;
+
+    const Themes = ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"];
+
+
+
+   
+export default Themes;

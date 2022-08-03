@@ -5,6 +5,8 @@ import { HiColorSwatch } from "react-icons/hi";
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
+
+
 //? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import CircularProgress from './components/CircularProgress/CircularProgress';
@@ -72,28 +74,7 @@ function App() {
 
       <NavBar/>
       <Stars />
-      <MainButton Color='neutral'  value='neutral'/>
-      <MainButton theme='dark'  value='dark'/>
-      <MainButton theme='coffee' value='coffee' />
-      <MainButton theme='lofi' value='lofi'/>
-      <MainButton theme='garden'  value='garden'/>
-      <MainButton theme='cupcake'  value='cupcake'/>
-      <MainButton theme='emerland'  value='emerland'/>
-      <MainButton theme='corporate'  value='corporate'/>
-      <MainButton theme='synthwave'  value='synthwave'/>
-      <MainButton theme='retro'  value='retro'/>
-      <MainButton theme='valentine' value='valentine'/>
-      <MainButton theme='halloween' value='halloween' />
-      <MainButton theme='business' value='business'/>
-      <MainButton theme='dracula'   value='dracula'/>
-      <MainButton theme='wireframe' value='wireframe' />
-      <MainButton theme='black' value='black'/>
-      <MainButton theme='pastel'  value='pastel'/>
-      <MainButton theme='cmyk'  value='cmyk'/>
-      <MainButton theme='acid'  value='acid'/>
-      <MainButton theme='lemonade'  value='lemonade'/>
-      <MainButton theme='winter' value='winter'/>
-      
+
 
 <div className='h-[300px] w-20'/>
       
@@ -109,10 +90,10 @@ function App() {
         <div  className="text-accent text-4xl">accent</div>
 
       </div>
+
       <HiColorSwatch  className='w-20 h-20 fill-primary'/>
       <End  id="footer"/>
-      
-
+    
 {/*//* APP end */}
       </div>
   );
