@@ -1,6 +1,7 @@
 //? styles here . 
 import './App.css';
 
+import { HiColorSwatch } from "react-icons/hi";
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
@@ -57,9 +58,10 @@ function App() {
 
   const ask = useSpring(
     {
-      from: { x: 0 },
-      to: { x: 300 },
+      from: {  rotateX:0},
+      to: { rotateX:290 },
       loop: { reverse: true },
+      delay:1500
     }
   );
 
@@ -68,8 +70,8 @@ function App() {
   return (
     <div className='App ' >
 
-      <Stars />
       <NavBar/>
+      <Stars />
       <MainButton Color='neutral'  value='neutral'/>
       <MainButton theme='dark'  value='dark'/>
       <MainButton theme='coffee' value='coffee' />
@@ -93,10 +95,11 @@ function App() {
       <MainButton theme='winter' value='winter'/>
       
 
+<div className='h-[300px] w-20'/>
       
-      <div className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">Hello WoRld!</div>
+      <div  className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
 
-      <a.div style={{...ask,delay:5000}} className={"w-20 h-20 bg-accent"}>
+      <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
 
       </a.div>
       <div className=' '>
@@ -106,9 +109,9 @@ function App() {
         <div  className="text-accent text-4xl">accent</div>
 
       </div>
-      <footer><End/></footer>
-
-
+      <HiColorSwatch  className='w-20 h-20 fill-primary'/>
+      <End  id="footer"/>
+      
 
 {/*//* APP end */}
       </div>

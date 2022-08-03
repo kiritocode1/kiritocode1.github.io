@@ -52,9 +52,9 @@ code {
   
 
 
-  -webkit-animation: glowy 8s ease-in-out  alternate;
+  -webkit-animation: glowy 7s ease-in-out  alternate;
 
-    animation: glowy 8s ease-in-out  alternate;
+    animation: glowy 7s ease-in-out  alternate;
 
 
 
@@ -64,10 +64,10 @@ code {
 
 @keyframes  glowy{
   0%{
-      box-shadow: 1px 1px 40px 200px black;
+      box-shadow: 1px 1px 40px 200px hsl(var(--n));
   }
   33%{
-      box-shadow: 1px 1px 40px 50px gray;
+      box-shadow: 1px 1px 40px 50px hsl(var(--a));
   }
   100%{
       box-shadow: 1px 1px 20px 8px skyblue;
@@ -78,7 +78,14 @@ code {
 }
 
 
-
+.glassy{
+background: rgba(255, 255, 255, 0.29);
+  /* box-shadow: 0 8px 32px 0 hsl(var(--a)); */
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 
 
@@ -89,6 +96,13 @@ code {
 
 .barcode{
   font-family: 'Libre Barcode 39', cursive;
+}
+
+
+
+
+.next-level{
+  background-color: linear-gradient(43.5deg, #ff0 -9.3%, #fb7c00 23.22%, #e73b50 46.1%, #d430d4 84.13%);
 }
 
 /*? Tailwind */
