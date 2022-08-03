@@ -2,22 +2,22 @@ import { useSpring, animated as a  } from "react-spring";
 
 
 
-
+//!  Self explanatory code , animated w/ spring and native implementation of the 
 
 
 const NavBar = () => { 
-  const themey = ["lofi","dark","garden","cupcake","coffee","emerland","corporate","synthwave","retro","valentine","halloween","business","dracula","wireframe","black","pastel","cmyk","acid","lemonade","winter"]
+
 
   const styl = useSpring({
-    from: { rotateX:0 , x:0 },
-    to: { rotateX: 360, x:3 },
+    from: { rotateX: 0, x: 0 },
+    to: { rotateX: 360, x: 3 },
     loop: { reverse: true },
-    delay:1500
-  })
+    delay: 1500
+  });
     return (
       <div class="navbar bg-base-100">
   <div class="flex-1">
-    <a class="btn btn-ghost normal-case text-xl"><div className="bg-clip-text text-transparent  bg-secondary text-xl flex"><a.div style={styl} className="bg-inherit bg-clip-text text-transparent hover:bg-red-500">◉</a.div>/_\<a.div style={styl} className="bg-inherit bg-clip-text text-transparent ">◉</a.div></div></a>
+    <a class="btn btn-ghost normal-case text-xl" href="https://www.github.com/kiritocode1"><div className="bg-clip-text text-transparent  bg-secondary text-xl flex"><a.div style={styl} className="bg-inherit bg-clip-text text-transparent ">◉</a.div>/_\<a.div style={styl} className="bg-inherit bg-clip-text text-transparent ">◉</a.div></div></a>
   </div>
   <div class="flex-none dropdown dropdown-end">
     <button class="btn btn-square btn-ghost">
@@ -25,7 +25,7 @@ const NavBar = () => {
           </button>
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a href="#footer">Content</a></li>
-            <li><a href="#">
+            <li><a href="https://github.com/kiritocode1">
             <div>themes</div>
             </a></li>
   </ul>

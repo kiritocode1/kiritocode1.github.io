@@ -58,8 +58,8 @@ function App() {
 
   const ask = useSpring(
     {
-      from: {  rotateX:0},
-      to: { rotateX:290 },
+      from: {  rotateX:0,x:0},
+      to: { rotateX:290 ,x:1000},
       loop: { reverse: true },
       delay:1500
     }

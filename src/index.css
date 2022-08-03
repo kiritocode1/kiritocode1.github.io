@@ -67,7 +67,7 @@ code {
       box-shadow: 1px 1px 40px 200px hsl(var(--n));
   }
   33%{
-      box-shadow: 1px 1px 40px 50px hsl(var(--a));
+      box-shadow: 1px 1px 40px 50px hsl(var(--p));
   }
   100%{
       box-shadow: 1px 1px 20px 8px skyblue;
