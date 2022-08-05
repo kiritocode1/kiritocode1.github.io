@@ -6,7 +6,7 @@ import { HiColorSwatch } from "react-icons/hi";
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
-
+import Themesy from './themes/themes';
 //? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import CircularProgress from './components/CircularProgress/CircularProgress';
@@ -74,9 +74,9 @@ function App() {
 
       <NavBar/>
       <Stars />
-
-
-<div className='h-[300px] w-20'/>
+      <div className='flex gap-2 flex-wrap justify-center'>
+        {Themesy.map(theme=><MainButton theme={theme} value={theme}/>)}
+      </div>
       
       <div  className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
 

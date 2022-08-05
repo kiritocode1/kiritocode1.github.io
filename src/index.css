@@ -6,6 +6,16 @@ html{
   display: none;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: hsl(var(--n));
+  background: hsl(var(--s));
+}
 
 
 
