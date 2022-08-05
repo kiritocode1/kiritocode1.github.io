@@ -1,12 +1,16 @@
 //? styles here . 
 import './App.css';
-
+import Themes from './themes/Themes';
 import { HiColorSwatch } from "react-icons/hi";
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
+<<<<<<< HEAD
 import Themesy from './themes/themes';
+=======
+import { Routes ,Route} from 'react-router-dom';
+>>>>>>> e03987079f01f739bfe05fe24edc8fe06606a61c
 //? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import CircularProgress from './components/CircularProgress/CircularProgress';
@@ -74,12 +78,14 @@ function App() {
 
       <NavBar/>
       <Stars />
+
       <div className='flex gap-2 flex-wrap justify-center'>
         {Themesy.map(theme=><MainButton theme={theme} value={theme}/>)}
       </div>
-      
-      <div  className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
 
+
+      <div className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
+      
       <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
 
       </a.div>
@@ -98,4 +104,11 @@ function App() {
       </div>
   );
 }
+
+
+
+
+
+
+
 export default App;
