@@ -1,16 +1,14 @@
 //? styles here . 
 import './App.css';
-import Themes from './themes/Themes';
+
 import { HiColorSwatch } from "react-icons/hi";
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
-<<<<<<< HEAD
+
 import Themesy from './themes/themes';
-=======
-import { Routes ,Route} from 'react-router-dom';
->>>>>>> e03987079f01f739bfe05fe24edc8fe06606a61c
+
 //? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import CircularProgress from './components/CircularProgress/CircularProgress';
