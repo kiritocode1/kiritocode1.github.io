@@ -7,7 +7,7 @@ import { SiMedium } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
-import { useSpring, animated as a  } from 'react-spring';
+// import { useSpring, animated as a  } from 'react-spring';
 
 
 

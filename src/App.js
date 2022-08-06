@@ -1,13 +1,13 @@
 //? styles here . 
 import './App.css';
 
-import { HiColorSwatch } from "react-icons/hi";
+
 
 import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
 
-import Themesy from './themes/themes';
+// import Themesy from './themes/themes';
 
 //? import element lol .  /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -35,7 +35,7 @@ import Stars from './components/display_stars/stars';
 
 
 //? Main Button Done ✅
-import MainButton from './components/Button/Button';
+// import MainButton from './components/Button/Button';
 
 
 //! Navbar 
@@ -57,7 +57,7 @@ function App() {
  
   useEffect(() => {
     themeChange(false)
-    // 👆 false parameter is required for react project
+    // 👆 false parameter is required for react project to use themes . 
   }, []);
 
   const ask = useSpring(
@@ -77,16 +77,13 @@ function App() {
       <NavBar/>
       <Stars />
 
-      <div className='flex gap-2 flex-wrap justify-center'>
-        {Themesy.map(theme=><MainButton theme={theme} value={theme}/>)}
-      </div>
 
 
       <div className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
       
-      <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
+      {/* <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
 
-      </a.div>
+      </a.div> */}
       <div className=' '>
         <div className="text-primary text-4xl">primary</div>
         <div  className="text-secondary text-4xl">secondary</div>
@@ -95,7 +92,7 @@ function App() {
 
       </div>
 
-      <HiColorSwatch  className='w-20 h-20 fill-primary'/>
+      {/* <HiColorSwatch  className='fill-primary'/> */}
       <End  id="footer"/>
     
 {/*//* APP end */}

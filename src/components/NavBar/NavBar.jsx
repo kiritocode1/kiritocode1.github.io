@@ -1,10 +1,11 @@
 import { useSpring, animated as a  } from "react-spring";
 
 import { Link } from "react-router-dom";
+import { HiColorSwatch } from "react-icons/hi";
 
 //!  Self explanatory code , animated w/ spring and native implementation of the 
-
-
+import Themesy from "../../themes/themes";
+import MainButton from "../Button/Button";
 const NavBar = () => { 
 
 
@@ -26,13 +27,23 @@ const NavBar = () => {
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a href="./NavBar.jsx" download>Download C.V.</a></li>
             <li>
-            <Link to="/themes">Themes</Link>
-            </li>
-            <li>
             <Link to="/about">about</Link>
             </li>
   </ul>
   </div>
+    <div class="flex-none dropdown dropdown-end">
+          <button class="btn btn-ghost  ">
+            
+      <HiColorSwatch  className='hover:fill-primary w-6 h-6 '/>
+
+          </button>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-[20rem] md:w-80 flex ">
+
+            <div className="gap-1 flex md:flex-wrap    overflow-scroll">
+          {Themesy.map(theme=><MainButton theme={theme} Color="outline btn-accent" value={theme}/>)}</div>
+  </ul>
+  </div>
+
 </div>
     );
 }
