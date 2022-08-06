@@ -3,7 +3,7 @@ import './App.css';
 
 
 
-import { useSpring, animated as a  } from "react-spring";
+// import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
 
@@ -60,14 +60,14 @@ function App() {
     // 👆 false parameter is required for react project to use themes . 
   }, []);
 
-  const ask = useSpring(
-    {
-      from: {  rotateX:0,x:0},
-      to: { rotateX:290 ,x:1000},
-      loop: { reverse: true },
-      delay:1500
-    }
-  );
+  // const ask = useSpring(
+  //   {
+  //     from: {  rotateX:0,x:0},
+  //     to: { rotateX:290 ,x:1000},
+  //     loop: { reverse: true },
+  //     delay:1500
+  //   }
+  // );
 
 
 

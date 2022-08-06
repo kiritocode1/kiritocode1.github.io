@@ -40,7 +40,7 @@ const NavBar = () => {
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-[20rem] md:w-80 flex ">
 
             <div className="gap-1 flex md:flex-wrap    overflow-scroll">
-          {Themesy.map(theme=><MainButton theme={theme} Color="outline btn-accent" value={theme}/>)}</div>
+          {Themesy.map(theme=><MainButton theme={theme} Color="primary btn-accent" value={theme}/>)}</div>
   </ul>
   </div>
 
