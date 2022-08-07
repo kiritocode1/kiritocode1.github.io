@@ -2,7 +2,9 @@ import { useSpring, animated as a  } from "react-spring";
 
 import { Link } from "react-router-dom";
 import { HiColorSwatch } from "react-icons/hi";
-
+import { TbDownload,TbBrandOpenSource, TbBrandTwitter } from "react-icons/tb";
+import { BsJournalCode, BsLightbulb } from "react-icons/bs";
+import {AiFillCode} from "react-icons/ai";
 //!  Self explanatory code , animated w/ spring and native implementation of the 
 import Themesy from "../../themes/themes";
 import MainButton from "../Button/Button";
@@ -25,22 +27,22 @@ const NavBar = () => {
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
           </button>
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 text-primary mono_text1 text-center">
-    <li><a href={require("../../Resume/Aryan_Kathawale_.pdf")} download="Aryan_Kathawale" target="_blank" rel="noreferrer">Download C.V.</a></li>
+    <li><a href={require("../../Resume/Aryan_Kathawale_.pdf")} download="Aryan_Kathawale" target="_blank" rel="noreferrer" className="flex"><TbDownload className=""/> Download C.V.</a></li>
 
             <li>
-            <Link to="/projects">projects</Link>
+            <Link to="/projects" className="flex"><AiFillCode/>     projects</Link>
             </li>
             <li>
-            <Link to="/blogs">blogs</Link>
+            <Link to="/blogs" className="flex"> <BsJournalCode/>   blogs</Link>
             </li>
             <li>
-            <Link to="/learn">Learn</Link>
+            <Link to="/learn" className="flex"><BsLightbulb/>   Learn</Link>
             </li>
             <li>
-            <Link to="/offline">Offline</Link>
+            <Link to="/offline" className="flex"> <TbBrandOpenSource/> Offline</Link>
             </li>
             <li>
-            <Link to="/Socials">Socials</Link>
+            <Link to="/Socials" className="flex"><TbBrandTwitter/>     Socials</Link>
             </li>
                         <li>
             <Link to="/">__Main__</Link>

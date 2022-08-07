@@ -73,14 +73,7 @@ function App() {
     // 👆 false parameter is required for react project to use themes . 
   }, []);
 
-  // const ask = useSpring(
-  //   {
-  //     from: {  rotateX:0,x:0},
-  //     to: { rotateX:290 ,x:1000},
-  //     loop: { reverse: true },
-  //     delay:1500
-  //   }
-  // );
+
 
 
 
@@ -92,11 +85,9 @@ function App() {
 
 
 
-      <div className="font-extrabold mono_text3 md:text-9xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow " id="#content">Hello WoRld!</div>
-      
-      {/* <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
 
-      </a.div> */}
+      
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/learn" element={<LearnPage/>}    />
@@ -105,10 +96,8 @@ function App() {
         <Route path="/blogs" element={<BlogsPage/>}    />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/socials" element={<SocialsPage/>}    />
-        
       </Routes>
 
-      {/* <HiColorSwatch  className='fill-primary'/> */}
       <End  id="footer"/>
     
 {/*//* APP end */}
