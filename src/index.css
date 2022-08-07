@@ -8,13 +8,17 @@ html{
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: red;
-  background: yellow;
+  color: hsl(var(--n));
+    background: hsl(var(--s));
+    border-radius: 30%;
+
+
 }
 
 ::selection {
   color: hsl(var(--n));
   background: hsl(var(--s));
+  border-radius: 30%;
 }
 
 
@@ -80,7 +84,7 @@ code {
       box-shadow: 1px 1px 40px 50px hsl(var(--p));
   }
   100%{
-      box-shadow: 1px 1px 20px 8px skyblue;
+      box-shadow: 1px 1px 20px 8px hsl(var(--a));
   }
         66% {
           box-shadow: 1px 1px 40px 21px white;

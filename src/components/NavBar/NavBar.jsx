@@ -49,13 +49,13 @@ const NavBar = () => {
             </li>
   </ul>
   </div>
-    <div class="flex-none dropdown dropdown-end">
+    <div class="flex-none dropdown dropdown-end ">
           <button class="btn btn-ghost  ">
             
       <HiColorSwatch  className='hover:fill-primary w-6 h-6 '/>
 
           </button>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-[20rem] md:w-80 flex ">
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-[20rem] md:w-[20rem] flex ">
 
             <div className="gap-1 flex md:flex-wrap    overflow-scroll">
           {Themesy.map(theme=><MainButton theme={theme} Color="primary btn-accent" value={theme}/>)}</div>
