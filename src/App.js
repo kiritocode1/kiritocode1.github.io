@@ -2,6 +2,15 @@
 import './App.css';
 
 
+import HomePage from "./Pages/HomePage";
+import LearnPage from "./Pages/Learn";
+import OfflinePage from "./Pages/OfflinePage";
+import ErrorPage from "./Pages/ErrorPage";
+import SocialsPage from "./Pages/SocialsPage";
+import ProjectsPage from "./Pages/ProjectsPage";
+import BlogsPage from "./Pages/BlogsPage";
+
+
 
 // import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
@@ -16,7 +25,7 @@ import './App.css';
 import Stars from './components/display_stars/stars';
 
 // ? DAY-Night Theme Switch . lol .✅
-// import ModeSwap from './components/light_dark'; 
+// import ModeSwap from './components/light_dark';
 
 //? Rating 5 ✅
 // import RateFront from './components/Rating_system/Rate_front';
@@ -36,6 +45,10 @@ import Stars from './components/display_stars/stars';
 
 //? Main Button Done ✅
 // import MainButton from './components/Button/Button';
+
+
+
+import { Route, Routes } from 'react-router-dom';
 
 
 //! Navbar 
@@ -84,13 +97,16 @@ function App() {
       {/* <a.div style={{...ask}} className={"w-20 h-20 bg-accent rounded-lg"}>
 
       </a.div> */}
-      <div className=' '>
-        <div className="text-primary text-4xl">primary</div>
-        <div  className="text-secondary text-4xl">secondary</div>
-        < div  className="text-neutral text-4xl">neutral</div>
-        <div  className="text-accent text-4xl">accent</div>
-
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/learn" element={<LearnPage/>}    />
+        <Route path="/offline" element={<OfflinePage/>}    />
+        <Route path="*" element={<ErrorPage/>}    />
+        <Route path="/blogs" element={<BlogsPage/>}    />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/socials" element={<SocialsPage/>}    />
+        
+      </Routes>
 
       {/* <HiColorSwatch  className='fill-primary'/> */}
       <End  id="footer"/>
