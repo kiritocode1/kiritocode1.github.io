@@ -44,6 +44,9 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+
+
 .mono_text1{
   font-family: 'Fira Code', monospace;
 }
@@ -54,7 +57,9 @@ code {
   font-family: 'Major Mono Display', monospace;
 }
 
-
+.mono_text4{
+  font-family: 'Space Mono', monospace;
+}
 /* =========== */
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
 
@@ -66,9 +71,9 @@ code {
   
 
 
-  -webkit-animation: glowy 7s ease-in-out  alternate;
+  -webkit-animation: glowy 2s ease-in-out  alternate;
 
-    animation: glowy 7s ease-in-out  alternate;
+    animation: glowy 2s ease-in-out  alternate;
 
 
 
@@ -123,3 +128,14 @@ background: rgba(255, 255, 255, 0.29);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.glow_contact1 {
+  box-shadow: 0px 0px 400px 160px hsl(var(--p));
+}
+
+.glow_contact2{
+  box-shadow: 0px 0px 400px 160px hsl(var(--a));
+}

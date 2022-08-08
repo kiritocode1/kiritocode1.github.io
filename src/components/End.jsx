@@ -27,7 +27,7 @@ const End = () => {
 
                 <a href='https://www.github.com/kiritocode1' className=" w-8 h-8"><FaGithub className="w-full h-6" /></a>
                 <a href='https://medium.com/@kathawalearyan' className=" w-8 h-8"><SiMedium className="w-full h-6" /></a>
-                <a href='https://www.facebook.com/aryan.kathawale.16/' className=" w-8 h-8"><BsLinkedin className="w-full h-6" /></a>
+                <a href='https://www.linkedin.com/in/aryan-kathawale-8983b5171/' className=" w-8 h-8"><BsLinkedin className="w-full h-6" /></a>
             </div>
         </footer>
 

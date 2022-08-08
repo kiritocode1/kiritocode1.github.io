@@ -18,7 +18,7 @@ const NavBar = () => {
     delay: 1500
   });
     return (
-      <div class="navbar bg-base-100 fixed backdrop-filter backdrop-blur-md bg-opacity-90">
+      <div class="navbar bg-base-100 fixed backdrop-filter backdrop-blur-md bg-opacity-90 z-20">
   <div class="flex-1">
     <a class="btn btn-ghost normal-case text-3xl" href="https://www.github.com/kiritocode1"><div className="bg-clip-text text-transparent  bg-secondary text-3xl flex"><a.div style={styl} className="bg-inherit bg-clip-text text-transparent ">◉</a.div>/_\<a.div style={styl} className="bg-inherit bg-clip-text text-transparent ">◉</a.div></div></a>
   </div>

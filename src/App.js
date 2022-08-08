@@ -71,6 +71,7 @@ function App() {
   useEffect(() => {
     themeChange(false)
     // 👆 false parameter is required for react project to use themes . 
+
   }, []);
 
 
@@ -84,10 +85,6 @@ function App() {
       <Stars />
 
 
-
-
-      
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/learn" element={<LearnPage/>}    />
@@ -98,7 +95,7 @@ function App() {
         <Route path="/socials" element={<SocialsPage/>}    />
       </Routes>
 
-      <End  id="footer"/>
+      <End   id="footer"/>
     
 {/*//* APP end */}
       </div>

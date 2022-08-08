@@ -1,7 +1,7 @@
 import Rand_array from "../Random/Rand_array";
 import MakeStars from "../Make_stars/MakeStars";
 import React from 'react'
-const foo = Rand_array(8, 552);
+const foo = Rand_array(12, 552);
 
 
 
