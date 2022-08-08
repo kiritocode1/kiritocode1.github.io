@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+
+
+
 
 const TextGradient = ({text, link}) => {
   return (
-    <a className="  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary  inline" href={link}>{text}</a>
+    <Link className="  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary  flex-none" to={link}>{text}</Link>
   );
 }
 

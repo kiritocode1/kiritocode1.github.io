@@ -42,15 +42,19 @@ const HomePage = () => {
 
 
 
-        <div className=" bg-neutral w-full rounded-xl h-80 text-white flex flex-col gap-4 pt-8 px-6">
+        <div className=" bg-neutral w-full rounded-xl h-[20rem] text-white flex flex-col gap-4 pt-8 px-6">
           <h1 className='text-3xl flex mono_text4'>About Me👋</h1>
-          <div className="mono_text2 font-extrabold flex flex-col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, inventore in. Ipsam eum eaque<TextGradient text="hello world" link="https://www.google.com"/> </div>
+          <div className="mono_text2 font-extrabold flex  text-start w-full flex-wrap"><b className="flex shrink-0">hello there  , im Aryan kathawale ,<br/> Im a 19 yr old </b> <TextGradient text="Computer Programmer" link="projects" /> <b className="flex shrink-0 flex-wrap">based in India, I focus Mostly on &nbsp;</b> 
+            <TextGradient text="Open Source &nbsp;" link="offline" />
+            <b className="flex shrink-0 flex-wrap">projects </b> 
+            <b className="flex shrink-0 flex-wrap">  and cool technologies , i believe and<br /> work towards<br />  a society  based on  Curiosity and <br /> Collaboration.  </b> 
+          </div>
         </div>
-        <div className=" flex w-full rounded-xl justify-center invisible md:visible relative h-80 overflow-hidden items-center">
-          <div className="backdrop-filter backdrop-blur-lg bg-opacity-20 z-10 bg-secondary w-full absolute h-80 mono_text4 flex flex-col px-6 pt-8 ">
+        <div className=" flex w-full rounded-xl justify-center invisible md:visible relative h-[20rem] overflow-hidden items-center">
+          <div className="backdrop-filter backdrop-blur-lg bg-opacity-20 z-10 bg-secondary w-full absolute h-[20rem] mono_text4 flex flex-col px-6 pt-8 text-neutral">
           
           <h1 className='text-3xl flex '>Contact Me here, pwease </h1>
-          <div>helo there </div>
+          <div>Id love to talk and geek out with you 😊 </div>
           
           </div>  
                           <a.div style={{ ...ask }} className="w-[90rem]  rounded-lg  flex justify-evenly absolute">
