@@ -1,7 +1,7 @@
 //? styles here . 
 import './App.css';
 
-
+import AnimatedCursor from "react-animated-cursor";
 import HomePage from "./Pages/HomePage";
 import LearnPage from "./Pages/Learn";
 import OfflinePage from "./Pages/OfflinePage";
@@ -96,7 +96,12 @@ function App() {
 
       <ContactEmail/>
       <End   id="footer"/>
-    
+    <AnimatedCursor       innerSize={18}
+      outerSize={15}
+      color='111, 0, 255'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={5}/>
 {/*//* APP end */}
       </div>
   );
