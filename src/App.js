@@ -11,7 +11,9 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import BlogsPage from "./Pages/BlogsPage";
 
 
+import ContactEmail from './components/ContactEmail/ContactEmail';
 
+// import GetTwitterData from './components/GetTwitterData';
 // import { useSpring, animated as a  } from "react-spring";
 // import { useState } from 'react';
 
@@ -74,17 +76,13 @@ function App() {
 
   }, []);
 
-
-
-
-
   return (
     <div className='App ' >
 
       <NavBar/>
       <Stars />
 
-
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/learn" element={<LearnPage/>}    />
@@ -94,7 +92,9 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/socials" element={<SocialsPage/>}    />
       </Routes>
+      
 
+      <ContactEmail/>
       <End   id="footer"/>
     
 {/*//* APP end */}

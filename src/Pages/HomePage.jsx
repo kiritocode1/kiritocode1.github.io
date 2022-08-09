@@ -3,7 +3,7 @@ import { useSpring, animated as a } from 'react-spring';
 
 import  Picture  from "../Pictures/kirito..png";
 
-import TextGradient from '../components/Gradient/TextGradient';
+import TextGradient from '../components/display_stars/Gradient/TextGradient';
 
 
 const HomePage = () => {
