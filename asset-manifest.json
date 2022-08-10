@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8888ec90.css",
-    "main.js": "/static/js/main.c67369cf.js",
+    "main.css": "/static/css/main.af9c4e2f.css",
+    "main.js": "/static/js/main.cd745cae.js",
+    "static/js/845.ee3bddac.chunk.js": "/static/js/845.ee3bddac.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/me.png": "/static/media/me.2ae718c44c052e65aaf0.png",
+    "static/media/BattleOfRetention.gif": "/static/media/BattleOfRetention.6530da580db17463e397.gif",
     "static/media/Aryan_Kathawale_.pdf": "/static/media/Aryan_Kathawale_.7256a4a94a28630ef539.pdf",
+    "static/media/btn.mp3": "/static/media/btn.f0af139b5af7a3ce828b.mp3",
+    "static/media/pop.mp3": "/static/media/pop.c342449634d5fc6c5d45.mp3",
+    "static/media/mail.mp3": "/static/media/mail.942e5b141f4547645fc6.mp3",
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.05dad9152f4bc7bf1e51c202ff2965bd.svg",
     "index.html": "/index.html",
-    "main.8888ec90.css.map": "/static/css/main.8888ec90.css.map",
-    "main.c67369cf.js.map": "/static/js/main.c67369cf.js.map",
+    "main.af9c4e2f.css.map": "/static/css/main.af9c4e2f.css.map",
+    "main.cd745cae.js.map": "/static/js/main.cd745cae.js.map",
+    "845.ee3bddac.chunk.js.map": "/static/js/845.ee3bddac.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8888ec90.css",
-    "static/js/main.c67369cf.js"
+    "static/css/main.af9c4e2f.css",
+    "static/js/main.cd745cae.js"
   ]
 }
