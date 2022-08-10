@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSpring, animated as a } from 'react-spring';
-import { Link } from "react-router-dom";
+import { TypeAnimation } from 'react-type-animation';
 import  Picture  from "../Pictures/me.png";
-
+import arrow from "../Pictures/arrow_svg.svg";
 import TextGradient from '../components/display_stars/Gradient/TextGradient';
 import {FiTwitter} from "react-icons/fi"
 import {AiOutlineLinkedin} from "react-icons/ai"
 const HomePage = () => {
+  const [hovery, sethovery] = React.useState(false);
     const ask = useSpring(
     {
         from: { rotateZ:0},
@@ -16,6 +17,24 @@ const HomePage = () => {
     }
   );
 
+
+
+
+
+
+  const arrowy = useSpring({
+    rotatez: hovery ? 200 : 0, width: hovery ? 100 : 0,
+    y: hovery ? 19 : 0,
+    x: hovery ? -90 : 0,
+
+  });
+  const arrowtext = useSpring({
+    y: hovery ? 36 : 100,
+    x: hovery ? 56 : 20,
+    opacity: hovery ? 1 : 0,
+    rotatez: hovery ? -11: 0,
+
+  });
   return (
     <div className=" flex flex-col items-center justify-center gap-3 pb-3 z-10">
               
@@ -34,10 +53,21 @@ const HomePage = () => {
 
 
 
-
-
-      <div className=" mono_text4 md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow  mb-2 h-20 w-full rocket" id="#content">@Aryan_Kathawale</div>
-
+      <div className="w-full mb-2 flex items-center justify-center ">
+        <button onDoubleClick={()=>sethovery(!hovery)} >
+               <div className=" mono_text4 md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow  mb-2 h-20  rocket" id="#content"  >@Aryan_Kathawale</div></button>
+        <a.img src={arrow}  style={{...arrowy}} alt="arrow" className="w-20 h-20 fill-accent z-10 absolute" />
+        <a.div className='absolute arrow_text text-[#2af598] text-3xl ' style={{ ...arrowtext }}>
+        <TypeAnimation
+    sequence={['Full Stack Developer', 3000, '19', 3000, 'Loves ALL Types OF  Music', 3000, 'Gamer', 3000, 'Weab', 3000,'Hikiomori', 4000, '@kiritocode1', 13000, 'Occassionally gets Laid', 5000, 'L from Deathnote', 4000, 'Open Source', 4000, 'Loves Mushrooms', 3000, 'Coffee to Code Converter', 5000, 'Student in NBN, Pune', 1000]}
+                   //  Replacing previous Text
+    style={{ fontSize: '1.875rem' }}
+    wrapper="h2"
+            repeat={Infinity}
+  />
+      
+        </a.div>
+</div>
       <div className="flex flex-col  lg:flex-row w-full items-center gap-12 justify-center  pt-4 md:px-16 mt-10">
 
 

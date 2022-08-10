@@ -84,13 +84,13 @@ function App() {
 
       
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage  className="px-1 md:px-0"/>} />
         <Route path="/learn" element={<LearnPage/>}    />
         <Route path="/offline" element={<OfflinePage/>}    />
         <Route path="*" element={<ErrorPage/>}    />
         <Route path="/blogs" element={<BlogsPage/>}    />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/socials" element={<SocialsPage/>}    />
+        <Route path="/socials" element={<SocialsPage/>}/>
       </Routes>
       
 

@@ -113,16 +113,28 @@ background: rgba(255, 255, 255, 0.29);
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 .barcode{
   font-family: 'Libre Barcode 39', cursive;
 }
 
-
+.arrow_text{
+  font-family: 'Sacramento', cursive;
+}
 
 
 .next-level{
   background-color: linear-gradient(43.5deg, #ff0 -9.3%, #fb7c00 23.22%, #e73b50 46.1%, #d430d4 84.13%);
 }
+
+
+
+
+
+
+
 
 /*? Tailwind */
 @tailwind base;
