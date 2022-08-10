@@ -4,10 +4,15 @@ import { TypeAnimation } from 'react-type-animation';
 import  Picture  from "../Pictures/me.png";
 import arrow from "../Pictures/arrow_svg.svg";
 import TextGradient from '../components/display_stars/Gradient/TextGradient';
+
+
+import soundy from "../Sounds/pop.mp3";
+import useSound from "use-sound";
 import {FiTwitter} from "react-icons/fi"
 import {AiOutlineLinkedin} from "react-icons/ai"
 const HomePage = () => {
   const [hovery, sethovery] = React.useState(false);
+  const [boop] = useSound(soundy);
     const ask = useSpring(
     {
         from: { rotateZ:0},
@@ -54,12 +59,12 @@ const HomePage = () => {
 
 
       <div className="w-full mb-2 flex items-center justify-center ">
-        <button onDoubleClick={()=>sethovery(!hovery)} >
+        <button onDoubleClick={() => { sethovery(!hovery); boop()}} >
                <div className=" mono_text4 md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow  mb-2 h-20  rocket" id="#content"  >@Aryan_Kathawale</div></button>
         <a.img src={arrow}  style={{...arrowy}} alt="arrow" className="w-20 h-20 fill-accent z-10 absolute" />
         <a.div className='absolute arrow_text text-[#2af598] text-3xl ' style={{ ...arrowtext }}>
         <TypeAnimation
-    sequence={['Full Stack Developer', 3000, '19', 3000, 'Loves All Types Of Music ', 3000, 'Gamer', 3000, 'Weab ', 3000,'Hikiomori', 4000, '@kiritocode1', 6900, 'Occassionally gets Laid', 5000, 'L from Deathnote', 4000, 'Open Source', 4000, 'Loves Mushrooms', 3000, 'Coffee to Code Converter', 5000, 'Student in NBN, Pune', 1000, '190 wpm ', 1000, 'Black Lives Matter', 3000, 'Nerrrrrrrrd', 3000]}
+    sequence={['Full Stack Developer', 3000, '19', 3000, 'No Music === Im lost', 3000, 'Gamer', 3000, 'Weeb ', 3000,'Hikiomori', 4000, '@kiritocode1', 6900, 'Occassionally gets Laid', 5000, 'Basically Lazy Batman ', 4000, 'Open Source', 4000, 'Loves Mushrooms', 3000, 'Coffee to Code Converter', 5000, 'Student in NBN, Pune', 1000, '190 wpm ', 1000, 'Black Lives Matter', 3000, 'Nerrrrrrrrd', 3000, 'Philosopher', 1000, 'PTSD', 1000, 'Lives Loudly', 4000]}
                    //  Replacing previous Text
     style={{ fontSize: '1.875rem' }}
     wrapper="h2"

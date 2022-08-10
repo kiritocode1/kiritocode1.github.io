@@ -24,6 +24,7 @@
     "react-type-animation": "^2.0.5",
     "save-dev": "^0.0.1-security",
     "theme-change": "^2.1.0",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

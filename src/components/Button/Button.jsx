@@ -1,9 +1,11 @@
 import React from 'react'
 
-
-const MainButton = ({ Color="primary",value="btn" ,theme="lofi"}) => {
+import btn from "../../Sounds/btn.mp3"
+import useSound from "use-sound"
+const MainButton = ({ Color = "primary", value = "btn", theme = "lofi" }) => {
+  const [cliggity]=useSound(btn)
     return (
-    <button data-set-theme={theme}  data-act-class="ACTIVECLASS" className={`btn btn-accent  btn-${Color}`}>{value}</button>
+    <button data-set-theme={theme}  data-act-class="ACTIVECLASS" className={`btn btn-accent  btn-${Color}`} onClick={cliggity}>{value}</button>
 
   );
 }
