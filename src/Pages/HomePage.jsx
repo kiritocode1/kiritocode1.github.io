@@ -5,14 +5,15 @@ import  Picture  from "../Pictures/me.png";
 import arrow from "../Pictures/arrow_svg.svg";
 import TextGradient from '../components/display_stars/Gradient/TextGradient';
 
-
 import soundy from "../Sounds/pop.mp3";
+import abra from "../Sounds/magicwoshoowosho.mp3";
 import useSound from "use-sound";
 import {FiTwitter} from "react-icons/fi"
 import {AiOutlineLinkedin} from "react-icons/ai"
 const HomePage = () => {
   const [hovery, sethovery] = React.useState(false);
   const [boop] = useSound(soundy);
+  const [abraka] = useSound(abra)
     const ask = useSpring(
     {
         from: { rotateZ:0},
@@ -59,7 +60,7 @@ const HomePage = () => {
 
 
       <div className="w-full mb-2 flex items-center justify-center ">
-        <button onDoubleClick={() => { sethovery(!hovery); boop()}} >
+        <button onDoubleClick={() => { sethovery(!hovery); !hovery?boop():abraka()}} >
                <div className=" mono_text4 md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow  mb-2 h-20  rocket" id="#content"  >@Aryan_Kathawale</div></button>
         <a.img src={arrow}  style={{...arrowy}} alt="arrow" className="w-20 h-20 fill-accent z-10 absolute" />
         <a.div className='absolute arrow_text text-[#2af598] text-3xl ' style={{ ...arrowtext }}>
