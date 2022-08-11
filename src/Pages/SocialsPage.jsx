@@ -1,85 +1,108 @@
-import React from 'react'
-import mainGif from "../Pictures/BattleOfRetention.gif";
+import React,{useState,useEffect} from 'react'
+import meow from "../Pictures/mewo.gif";
+import catsound from "../Sounds/catMeow.mp3";
+import useSound from "use-sound";
 
 
+import spaceman from "../Pictures/astronaut-removebg.png";
 
-
-
-
-
-
-
-
-
-
-
-const useMousePosition = () => {
-  const [
-    mousePosition,
-    setMousePosition
-  ] = React.useState({ x: null, y: null });
-  React.useEffect(() => {
-    const updateMousePosition = ev => {
-      setMousePosition({ x: ev.clientX, y: ev.clientY });
-    };
-    window.addEventListener('mousemove', updateMousePosition);
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, []);
-  return mousePosition;
-};
-
-
-
-
-
-
-
-
-
-
+import { useSpring, animated as a } from "react-spring"
 
 
 const SocialsPage = () => {
+  const [GithubData, setGithubData] = useState(null);
+  const [mewoSound] = useSound(catsound);
+  const [MewoCatText, setmewo] = useState(true);
+  const styleCat = useSpring({
+    x:MewoCatText?192:194,
+    rotatex:MewoCatText?90:0,
+  })
 
+  const styleSpaceMan = useSpring({
+    from:{
+      y: -16,
+      rotateZ:24
+    },
+    y: 12, config: { duration: 12000 },
+    loop:{reverse:true},
+    rotateZ:-66
+    
+  })
+  const dataGT = async () => {
+    fetch('https://api.github.com/users/kiritocode1', {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    })
+      .then(response => response.json()) //Converting the response to a JSON object
+            .then(data => setGithubData(data));
+  };
 
-  const Mousy = useMousePosition();
-  const MouseX = Mousy.x;
-  const MouseY = Mousy.y;
+  useEffect(() => {
+    dataGT();
+ 
+  }, []);
+
   return (
-    <div className=' flex flex-wrap mb-6'>
-      <div className="w-full h-96 flex flex-wrap px-2 md:px-0">
+    <div  className="flex flex-wrap   sm:px-2 md:px-0 w-full  justify-evenly items-center gap-4">
 
-        <div className=' h-96 bg-primary flex items-center justify-center resize'>
+      <div className="relative    items-center justify-center flex ">
+        <div className="absolute z-10  w-full h-full flex md:items-start items-end justify-end  ">
+              <img src={meow} alt="fa-github" className="w-6 h-4"  onClick={()=>{
+            mewoSound();
+            
+          }} onMouseEnter={()=>setmewo(!MewoCatText)} onMouseLeave={()=>setmewo(!MewoCatText)} />
+      <a.div className="z-10 absolute bg-black text-xs" style={{...styleCat}}>Waiting for something  to happen?</a.div>
           
-          <div>{MouseY}</div>
-          <div>{MouseX}</div>
-          
-          <div class="stats stats-vertical lg:stats-horizontal shadow">
+</div>
+              
+
+
+        <div class="stats stats-vertical lg:stats-horizontal shadow">
   
   <div class="stat">
-    <div class="stat-title">Downloads</div>
-    <div class="stat-value">31K</div>
-    <div class="stat-desc">Jan 1st - Feb 1st</div>
+    <div class="stat-title">Repos</div>
+    <div class="stat-value">{GithubData?.public_repos}</div>
+    <div class="stat-desc">{`${GithubData?.public_gists} gists`}</div>
   </div>
   
   <div class="stat">
-    <div class="stat-title">New Users</div>
-    <div class="stat-value">4,200</div>
-    <div class="stat-desc">↗︎ 400 (22%)</div>
+    <div class="stat-title">Followers</div>
+    <div class="stat-value">{GithubData?.followers}</div>
+    <div class="stat-desc">all amazing</div>
   </div>
   
   <div class="stat">
-    <div class="stat-title">New Registers</div>
-    <div class="stat-value">1,200</div>
-    <div class="stat-desc">↘︎ 90 (14%)</div>
+    <div class="stat-title">Following</div>
+    <div class="stat-value">{GithubData?.following}</div>
+    <div class="stat-desc">not ready yet</div>
   </div>
   
-</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
       </div>
+      {/* secondary her */}
+            <div className=" w-60 h-60 items-center justify-center flex">
+        <div>
+          <a.img src={spaceman} style={{...styleSpaceMan}} alt="astro" />
+        </div>
+      </div>
+                  <div className=" w-60 h-60 items-center justify-center flex">
+        <div className="mono_text3 text-primary text-xl">wow look at all this empty space </div>
+      </div>
+      {/* Primary tag ends here  */}
     </div>
-  )
+  );
 }
 
 export default SocialsPage
