@@ -3,7 +3,7 @@ import meow from "../Pictures/mewo.gif";
 import catsound from "../Sounds/catMeow.mp3";
 import useSound from "use-sound";
 
-
+import {AiFillCaretDown} from "react-icons/ai"
 import spaceman from "../Pictures/astronaut-removebg.png";
 
 import { useSpring, animated as a } from "react-spring"
@@ -17,6 +17,31 @@ const SocialsPage = () => {
     x:MewoCatText?192:194,
     rotatex:MewoCatText?90:0,
   })
+  const StyleIssue = useSpring({
+    from: { y: -120, rotatez: 0 },
+    y: -30, rotatez: 30 
+    , config: { duration: 12000 }, 
+    loop :{reverse:true}, 
+})
+  const StyleDEPLOY = useSpring({
+    from: { x: -20, rotatez: 0 , y:0},
+    x: 10, rotatez: 70 , y:70
+    , config: { duration: 12000 }, 
+    loop :{reverse:true}, 
+})
+
+    const Commit = useSpring({
+    from: { rotatez: -10 , y:60},
+     rotatez: 10 , y:70
+    , config: { duration: 12000 }, 
+    loop :{reverse:true}, 
+})
+
+
+
+
+
+
 
   const styleSpaceMan = useSpring({
     from:{
@@ -44,7 +69,7 @@ const SocialsPage = () => {
   }, []);
 
   return (
-    <div  className="flex flex-wrap   sm:px-2 md:px-0 w-full  justify-evenly items-center gap-4">
+    <div  className="flex flex-wrap   sm:px-2 md:px-0 w-full  justify-evenly items-center gap-4 mb-10">
 
       <div className="relative    items-center justify-center flex ">
         <div className="absolute z-10  w-full h-full flex md:items-start items-end justify-end  ">
@@ -92,9 +117,16 @@ const SocialsPage = () => {
 
       </div>
       {/* secondary her */}
-            <div className=" w-60 h-60 items-center justify-center flex">
+            <div className=" w-60 h-60  items-center justify-center flex overflow-hidden relative ">
         <div>
-          <a.img src={spaceman} style={{...styleSpaceMan}} alt="astro" />
+          <a.div className="flex z-10
+          bg-[#238636] btn gap-2 no-animation " style={{...Commit}} >
+            CREATE PULL REQUEST
+            <AiFillCaretDown className="w-6 h-6 border-l-2 border-l-green-900"/>
+          </a.div>
+          <a.div style={{...StyleDEPLOY}} className="z-10 badge badge-outline text-red-500 bg-red-700">problem:critical</a.div>
+          <a.img src={spaceman} style={{ ...styleSpaceMan }} alt="astro" className=" " />
+          <a.div className="badge badge-outline text-purple-500 bg-[#220f2f] absolute z-10" style={{...StyleIssue}} >good first issue </a.div>
         </div>
       </div>
                   <div className=" w-60 h-60 items-center justify-center flex">
