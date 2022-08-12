@@ -62,6 +62,20 @@ code {
 }
 /* =========== */
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+
+.Instagram{
+  font-family: 'Rochester', cursive;
+}
+
+
+.omori_text{
+  font-family: 'Pangolin', cursive;
+}
+
+
 
 .hand_text1{
   font-family: 'Dawning of a New Day', cursive;
