@@ -65,7 +65,7 @@ const HomePage = () => {
         <a.img src={arrow}  style={{...arrowy}} alt="arrow" className="w-20 h-20 fill-accent z-10 absolute" />
         <a.div className='absolute arrow_text text-[#2af598] text-3xl ' style={{ ...arrowtext }}>
         <TypeAnimation
-    sequence={['Full Stack Developer', 3000, '19 year old', 3000, 'No Music === Im lost', 3000, 'Gamer', 3000, 'Weeb ', 3000,'Hikiomori', 4000, '@kiritocode1', 6900, 'Occassionally gets Laid', 5000, 'Basically Lazy Batman ', 4000, 'Open Source', 4000, 'Loves Mushrooms', 3000, 'Coffee to Code Converter', 5000, 'Student in NBN, Pune', 1000, '190 wpm ', 1000, 'Thinks you should probably sleep', 3000, 'Nerrrrrrrrd', 3000, 'Philosopher', 1000, 'PTSD', 1000, 'Lives Loudly', 4000, "Internet's own boy", 9086]}
+    sequence={['Full Stack Developer', 3000, '19 year old {pewdiepie reference}', 3000, 'No Music === Im lost', 3000, 'Gamer', 3000, 'Weeb ', 3000,'Hikiomori', 4000, '@kiritocode1', 6900, 'Occassionally gets Laid', 5000, 'Basically Lazy Batman ', 4000, 'Open Source', 4000, 'Loves Mushrooms', 3000, 'Coffee to Code Converter', 5000, 'Student in NBN, Pune', 1000, '190 wpm ', 1000, 'Graphic Designer', 3000, 'Nerrrrrrrrd', 3000, 'Philosopher', 1000, 'PTSD', 1000, 'Lives Loudly', 4000, "Internet's own boy", 9086]}
                    //  Replacing previous Text
     style={{ fontSize: '1.875rem' }}
     wrapper="h2"
