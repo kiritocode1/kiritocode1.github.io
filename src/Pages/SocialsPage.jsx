@@ -11,9 +11,9 @@ import {FiGithub} from "react-icons/fi"
 import byesound from "../MoreSounds/bye.mp3";
 // import { IoPaperPlaneOutline } from "react-icons/io5";
 
-
+import {BiLike} from "react-icons/bi"
 import twitter from "../Pictures/twitter.png";
-
+import { BsLinkedin } from "react-icons/bs";
 
 
 import rocket from "../Pictures/rocket-removebg-preview.png"
@@ -204,7 +204,7 @@ const SocialsPage = () => {
 
       </div>
       {/* secondary her */}
-        <div className=" w-60 h-60  items-center justify-center flex overflow-hidden relative ">
+        <div className=" w-60 h-80  items-center justify-center flex overflow-hidden relative ">
           {/* spaceman */}
         <div>
           <a.div className="flex z-10
@@ -225,15 +225,16 @@ const SocialsPage = () => {
       <div className="px-6 my-10 flex items-center justify-evenly flex-wrap gap-2">
       
         {/* linkedin begin here ,  */}
-      <div class="card md:w-96 bg-[#0e76a8] w-full shadow-xl">
+      <div class="card md:w-96 bg-[#1d2226] w-full shadow-xl">
   <figure class="px-10 pt-10">
     <img src={twitter} alt="Shoes" class="rounded-xl" />
   </figure>
   <div class="card-body items-center text-center">
-    <h2 class="card-title">LinkedIN</h2>
-    <p>WORK IN progress</p>
+    <h2 class="card-title"><BsLinkedin className="w-20 h-20 animate-pulse "/></h2>
+    <p>Please Checkout MY linkedin for short snippets and collaborations , Id loooove to talk to you</p>
     <div class="card-actions">
-      <button class="btn btn-primary">LOL not final design</button>
+      <a href="https://www.linkedin.com/in/aryan-kathawale-8983b5171/" target="_blank" rel="noreferrer">
+      <button class="btn btn-outline text-indigo-500 flex gap-3 text-xl ">visit <BiLike className="h-6 w-6" /></button></a>
     </div>
   </div>
 </div>
