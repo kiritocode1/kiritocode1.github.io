@@ -64,10 +64,11 @@ import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 
 
-
 // ! ///////////////////////////////////////////////////////////////////////////////////////////
 
 function App() {
+
+
 
    const getColour = getComputedStyle(document.body).getPropertyValue("--p").replace("%",",");
   useEffect(() => {
@@ -79,7 +80,8 @@ function App() {
   return (
     <div className='App ' >
 
-      <NavBar/>
+      <NavBar />
+      
       <Stars />
 
       

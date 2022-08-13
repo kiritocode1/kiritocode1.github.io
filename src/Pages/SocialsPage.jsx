@@ -9,7 +9,36 @@ import { RiHeart2Line ,RiHeart2Fill} from "react-icons/ri";
 import { useSpring, animated as a } from "react-spring"
 import {FiGithub} from "react-icons/fi"
 import byesound from "../MoreSounds/bye.mp3";
-import {IoPaperPlaneOutline} from "react-icons/io5"
+// import { IoPaperPlaneOutline } from "react-icons/io5";
+
+
+import twitter from "../Pictures/twitter.png";
+
+
+
+import rocket from "../Pictures/rocket-removebg-preview.png"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const SocialsPage = () => {
   const [GithubData, setGithubData] = useState(null);
   const [mewoSound] = useSound(catsound);
@@ -65,6 +94,14 @@ const SocialsPage = () => {
             .then(data => setGithubData(data));
   };
 
+
+  const rocketyStyle = useSpring({
+    from: { y: 30 },
+    y: -30,
+    loop:{reverse:true}, 
+    config:{duration:9000}
+  })
+
   useEffect(() => {
     dataGT();
  
@@ -72,6 +109,15 @@ const SocialsPage = () => {
 
   return (
     <div >
+      <div className="w-full md:text-9xl text-wrap relative items-center justify-center flex mt-2 h-96 flex-col text-4xl text-primary heroMarkup gap-4">
+        <h1 className="">COLLABORATE.</h1>
+
+        <h1 className="change-text z-20">CODE(   )</h1>
+        
+        <h1 className="">CONTRIBUTE.</h1>
+
+              <a.img style={{...rocketyStyle}} src={rocket} className="z-10 absolute " alt="main"/>
+      </div>
       <div className="w-full h-40 flex items-center justify-center md:text-6xl text-3xl  ">GITHUB</div>
       <div className=" flex justify-center w-full">
                   <div className=" w-full h-60 md:w-96  flex justify-evenly items-center bg-[#010409] rounded-xl mx-2 border-2 border-accent ">
@@ -158,7 +204,8 @@ const SocialsPage = () => {
 
       </div>
       {/* secondary her */}
-            <div className=" w-60 h-60  items-center justify-center flex overflow-hidden relative ">
+        <div className=" w-60 h-60  items-center justify-center flex overflow-hidden relative ">
+          {/* spaceman */}
         <div>
           <a.div className="flex z-10
           bg-[#238636] btn gap-2 no-animation  text-green-500" style={{...Commit}} >
@@ -175,9 +222,32 @@ const SocialsPage = () => {
       {/* Primary tag ends here  */}
       </div>
       <div className="w-full h-40 flex items-center justify-center md:text-6xl text-3xl  ">Socials</div>
-      <div className="px-6 my-10">
+      <div className="px-6 my-10 flex items-center justify-evenly flex-wrap gap-2">
+      
+        {/* linkedin begin here ,  */}
+      <div class="card md:w-96 bg-[#0e76a8] w-full shadow-xl">
+  <figure class="px-10 pt-10">
+    <img src={twitter} alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">LinkedIN</h2>
+    <p>WORK IN progress</p>
+    <div class="card-actions">
+      <button class="btn btn-primary">LOL not final design</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{/* instagram */}
         <div class="card md:w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src={PicturesInsta} alt="Shoes" /></figure>
+  <figure><img src={PicturesInsta} alt="insta" /></figure>
   <div class="card-body">
     <h2 class="card-title text-3xl Instagram">Instagram</h2>
     <p className="font-mono">I Dont take pictures but hey , Love to meet people </p>

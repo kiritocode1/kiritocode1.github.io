@@ -80,7 +80,7 @@ code {
 .hand_text1{
   font-family: 'Dawning of a New Day', cursive;
 }
-
+/* 
 .star-active{
   
 
@@ -108,7 +108,7 @@ code {
         66% {
           box-shadow: 1px 1px 40px 21px white;
         }
-}
+} */
 
 
 .glassy{
@@ -156,7 +156,7 @@ background: rgba(255, 255, 255, 0.29);
 @tailwind utilities;
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&display=swap');
 
 .glow_contact1 {
   box-shadow: 0px 0px 400px 160px hsl(var(--p));
@@ -165,3 +165,46 @@ background: rgba(255, 255, 255, 0.29);
 .glow_contact2{
   box-shadow: 0px 0px 400px 160px hsl(var(--a));
 }
+
+
+.change-text {
+
+  animation-name: fontChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Electrolize&family=Inter&family=Lobster&family=Pacifico&display=swap');
+
+
+@keyframes fontChange {
+  0% {
+    font-family: 'Major Mono Display', monospace;
+  }
+
+  20% {
+    font-family: 'Fira Code',
+      monospace;
+  }
+
+  40% {
+font-family: 'Inter', sans-serif;
+  }
+
+  60% {
+    font-family: 'Pacifico', cursive;
+  }
+
+  80% {
+     font-family: 'Bad Script', cursive;
+  }
+
+  100% {
+    font-family: 'Lobster', cursive;
+  }
+}
+
+.heroMarkup{
+  font-family: 'Electrolize', sans-serif;
+}
+

@@ -48,7 +48,7 @@ const HomePage = () => {
 
 
 
-      <div class="avatar ">
+      <div class="avatar z-10 absolute md:top-40 top-20 mb-6">
   <div class="w-[10rem] mask mask-hexagon ">
     <img src={Picture} alt="profile" />
   </div>
@@ -59,7 +59,7 @@ const HomePage = () => {
 
 
 
-      <div className="w-full mb-2 flex items-center justify-center ">
+      <div className="w-full mb-2 flex items-center justify-center  ">
         <button onDoubleClick={() => { sethovery(!hovery); !hovery?boop():abraka()}} >
                <div className=" mono_text4 md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl hover:bg-gradient-to-l transition ease-linear delay-150  animate-glow  mb-2 h-20  rocket" id="#content"  >@Aryan_Kathawale</div></button>
         <a.img src={arrow}  style={{...arrowy}} alt="arrow" className="w-20 h-20 fill-accent z-10 absolute" />
