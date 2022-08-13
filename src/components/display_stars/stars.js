@@ -11,7 +11,7 @@ const Stars = () => {
   
   const styleStars = useSpring({
     from: { x: 0 }, 
-    x: -1200, 
+    x: -3600, 
     config:{duration:96000}, 
     loop:{reverse:true}
 })
