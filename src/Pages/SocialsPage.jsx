@@ -10,7 +10,7 @@ import { useSpring, animated as a } from "react-spring"
 import {FiGithub} from "react-icons/fi"
 import byesound from "../MoreSounds/bye.mp3";
 // import { IoPaperPlaneOutline } from "react-icons/io5";
-
+import clayRocket from "../Pictures/clay_rocket.png"
 import {BiLike} from "react-icons/bi"
 import twitter from "../Pictures/twitter.png";
 import { BsLinkedin } from "react-icons/bs";
@@ -19,12 +19,12 @@ import { BsLinkedin } from "react-icons/bs";
 import rocket from "../Pictures/rocket-removebg-preview.png"
 
 
+import rightuparrow from "../Pictures/right-up-arrow.png";
 
 
 
 
-
-
+import { AiFillTwitterCircle } from "react-icons/ai";
 
 
 
@@ -69,7 +69,44 @@ const SocialsPage = () => {
 })
 
 
-  const [likeInsta,setLike ]= useState(false);
+  const [likeInsta, setLike] = useState(false);
+
+
+
+
+  const [superactivated, setsuper] = useState([false, false, false, false]); 
+
+
+  const activated1 = useSpring({
+    
+    fontSize: superactivated[0]?100:80,
+    
+  });
+
+  const activated2 = useSpring({
+    
+    fontSize: superactivated[1]?100:80,
+    
+  });
+
+
+  const activated3 = useSpring({
+    
+    fontSize: superactivated[2]?100:80,
+    
+  });
+
+
+
+
+  const activated4 = useSpring({
+    
+    fontSize: superactivated[3]?100:80,
+    
+  });
+
+
+
 
 
 
@@ -222,7 +259,7 @@ const SocialsPage = () => {
       {/* Primary tag ends here  */}
       </div>
       <div className="w-full h-40 flex items-center justify-center md:text-6xl text-3xl  ">Socials</div>
-      <div className="px-6 my-10 flex items-center justify-evenly flex-wrap gap-2">
+      <div className="px-6 my-10 flex items-center justify-evenly flex-wrap gap-6">
       
         {/* linkedin begin here ,  */}
       <div class="card md:w-96 bg-[#1d2226] w-full shadow-xl">
@@ -243,6 +280,31 @@ const SocialsPage = () => {
 
 
 
+        <div className=" w-full lg:w-[50rem]  h-[30rem] flex items-center justify-evenly gap-6 ">
+          <div className="w-full h-full   flex  text-8xl text-secondary  text-left">
+            <div className="flex  flex-wrap gap-2 ">   <a.div style={activated1} onMouseEnter={()=>setsuper([true,false,false,false])} >IM</a.div>  <a.div style={activated2}  onMouseEnter={()=>setsuper([false,true,false,false])}>VERY</a.div> <a.div style={activated3} onMouseEnter={()=>setsuper([false,false,true,false])} >ACTIVE</a.div> <a.div style={activated4}  onMouseEnter={()=>setsuper([false,false,false,true])}>ON</a.div> <a href="https://www.twitter.com/kiritotwt1" rel='noreferrer' target="_blank"><AiFillTwitterCircle className="w-40  h-40 btn btn-ghost " /></a>
+            </div>
+          </div>
+          <div className="w-full h-full   md:flex items-center justify-center text-3xl text-secondary hidden ">
+            <a.img src={clayRocket} alt="clay-rocket"/>
+          </div>
+</div>
+
+<div className="bg-indigo-500 w-full md:w-96 h-96">
+        
+</div>
+
+
+        
+
+<div className="bg-indigo-500 w-full md:w-96 h-96">
+        hello world 
+</div>
+
+        
+
+
+
 
 
 
@@ -256,7 +318,10 @@ const SocialsPage = () => {
     <div className="btn btn-ghost bg-clip-text" onClick={()=>{setLike(!likeInsta)}}><a href="https://www.instagram.com/kiritocode1" className="w-full h-full " target="_blank" rel="noreferrer">{!likeInsta?<RiHeart2Line className={`w-full h-full `}/>:<RiHeart2Fill className='w-full h-full fill-[#ed4956]'/>}</a></div>
     </div>
   </div>
-</div>
+        </div>
+        
+
+
       </div>
     </div>
   );

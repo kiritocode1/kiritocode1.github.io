@@ -10,11 +10,11 @@ const foo = Rand_array(10, 552);
 const Stars = () => {
   
   const styleStars = useSpring({
-    from: { x: 0 }, 
-    x: -3600, 
-    config:{duration:96000}, 
-    loop:{reverse:true}
-})
+    from: { x: 0 },
+    x: -3600,
+    config: { duration: 96000 },
+    loop: { reverse: true }
+  });
 
   return (
     <div className="w-full overflow-hidden flex mb-4 ">
