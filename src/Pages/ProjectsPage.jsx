@@ -23,10 +23,10 @@ import { useState } from 'react';
 
 
 //! logos import    
-import {FaHtml5,FaCss3Alt,FaSass,FaJsSquare,FaNodeJs,FaMarkdown,FaPython,FaReact,FaGoogle,FaVuejs,FaGitSquare,FaGithub,FaGitlab,FaPhp,FaAndroid,FaAngular} from "react-icons/fa"
+import {FaHtml5,FaCss3Alt,FaSass,FaJsSquare,FaNodeJs,FaMarkdown,FaPython,FaReact,FaGoogle,FaVuejs,FaGitSquare,FaGithub,FaGitlab,FaPhp,FaAndroid,FaAngular,} from "react-icons/fa"
 
 import {DiMongodb,} from "react-icons/di"
-import {SiExpress,SiRedux,SiDeno,SiAmazonaws,SiTypescript,SiSvelte,SiVercel,SiCplusplus,SiFlutter,SiIonic,SiRedis} from "react-icons/si"
+import {SiExpress,SiRedux,SiDeno,SiAmazonaws,SiTypescript,SiSvelte,SiVercel,SiCplusplus,SiFlutter,SiIonic,SiRedis,SiDocker,SiKubernetes} from "react-icons/si"
 import {GrMysql} from "react-icons/gr"
 
 
@@ -57,7 +57,7 @@ const ProjectsPage = () => {
   return (
     <div className="w-full  flex flex-col items-center justify-center ">
       <div className="flex   relative  ">
-        <div className=' z-10 absolute  bg-base-100 rounded-full ' onClick={() => {
+        <div className=' z-10 absolute  bg-base-100 rounded-full top-[1.4rem] left-[8.5rem] ' onClick={() => {
           moneysound();
           setm(!money);
         }}><img src={sonicRing} alt="SonicRing" className="w-8  " /></div>
@@ -94,6 +94,8 @@ const ProjectsPage = () => {
         <CoolBtn element={<SiRedis />} />
         <CoolBtn element={<SiFlutter />} />
         <CoolBtn element={<GrMysql />} />
+        <CoolBtn element={<SiDocker />} />
+        <CoolBtn ELEMENT={<SiKubernetes/>}/>
         
       </div>
 
