@@ -63,6 +63,7 @@ const ProjectsPage = () => {
         }}><img src={sonicRing} alt="SonicRing" className="w-8  " /></div>
         <a.div style={moneyText}   className="text-transparent bg-clip-text  text-9xl  skills bg-primary">Skills</a.div>
       </div>
+      
 
       <div className="w-full   flex flex-wrap px-4 justify-center items-start">
         <CoolBtn element={<FaHtml5 />} />
@@ -98,9 +99,28 @@ const ProjectsPage = () => {
         <CoolBtn ELEMENT={<SiKubernetes/>}/>
         
       </div>
+            <div className="flex">
+      <div className="text-2xl">Why No Percentage ?</div> 
+<div class="dropdown dropdown-end">
+  <label tabindex="0" class="btn btn-circle btn-ghost btn-xs text-info">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  </label>
+  <div tabindex="0" class="card compact dropdown-content shadow bg-base-100 rounded-box w-64">
+    <div class="card-body">
+      <h2 class="card-title twitter_text">Why i dont showcase percentage ?</h2> 
+              <p className="twitter_text text-xs">
+                although i can easily portray like 80-90% , 
+                i feel like that undermines the learning and is for <b>you</b> to decide, 
+                but in my opinion i can still get into any project with these tech and understand how theyre working.
+      </p>
+    </div>
+  </div>
+</div>
+      </div>
 
-
-
+      <div className="mb-40 mt-60 text-9xl">
+        Projects
+      </div>
 
       
       </div>
