@@ -18,7 +18,7 @@ import MoneySounds from "../Sounds/gameySounds/Coin.mp3"
 import useSound from "use-sound";
 import { useSpring, animated as a } from "react-spring";
 import { useState } from 'react';
-
+import MarioCoin from "../Pictures/mario.gif";
 
 
 
@@ -26,14 +26,14 @@ import { useState } from 'react';
 import {FaHtml5,FaCss3Alt,FaSass,FaJsSquare,FaNodeJs,FaMarkdown,FaPython,FaReact,FaGoogle,FaVuejs,FaGitSquare,FaGithub,FaGitlab,FaPhp,FaAndroid,FaAngular,} from "react-icons/fa"
 
 import {DiMongodb,} from "react-icons/di"
-import {SiExpress,SiRedux,SiDeno,SiAmazonaws,SiTypescript,SiSvelte,SiVercel,SiCplusplus,SiFlutter,SiIonic,SiRedis,SiDocker,SiKubernetes} from "react-icons/si"
+import {SiExpress,SiRedux,SiDeno,SiAmazonaws,SiTypescript,SiSvelte,SiVercel,SiCplusplus,SiFlutter,SiIonic,SiRedis,SiDocker,SiTensorflow,SiKubernetes,SiFirebase} from "react-icons/si"
 import {GrMysql} from "react-icons/gr"
 
 
 
 const CoolBtn = ({ element }) => {
   return (
-    <a.div className="btn btn-ghost hover:text-primary btn-circle md:w-20 md:h-20 md:text-4xl">
+    <a.div className="btn btn-ghost hover:text-primary btn-circle md:w-20 md:h-20 md:text-4xl text-2xl">
       {element}
     </a.div>
   )
@@ -96,7 +96,11 @@ const ProjectsPage = () => {
         <CoolBtn element={<SiFlutter />} />
         <CoolBtn element={<GrMysql />} />
         <CoolBtn element={<SiDocker />} />
-        <CoolBtn ELEMENT={<SiKubernetes/>}/>
+        <CoolBtn element={<SiTensorflow />} />
+        <CoolBtn element={<SiKubernetes />} />
+        <CoolBtn element={<SiFirebase/>}/>
+
+        
         
       </div>
             <div className="flex">
@@ -118,8 +122,11 @@ const ProjectsPage = () => {
 </div>
       </div>
 
-      <div className="mb-40 mt-60 text-9xl">
-        Projects
+      <div className="mb-40 mt-60 text-6xl heroMarkup relative flex">
+        <div>Projects</div>
+        <div className="w-8 absolute z-10 top-[1.09rem] left-[4.12rem] bg-base-100 ">
+          <img src={MarioCoin} alt="coiny2" />
+          </div>
       </div>
 
       
