@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.7244cfb4.css",
-    "main.js": "/static/js/main.154e6ba1.js",
+    "main.js": "/static/js/main.c55a7c5a.js",
     "static/js/845.ee3bddac.chunk.js": "/static/js/845.ee3bddac.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/spacefor2.mp3": "/static/media/spacefor2.6fcdcf89d50c8a2367ab.mp3",
     "static/media/me.png": "/static/media/me.2ae718c44c052e65aaf0.png",
     "static/media/bye.mp3": "/static/media/bye.9f0d9b3017bc494da852.mp3",
+    "static/media/mario.mp3": "/static/media/mario.7867770dd804e6d1ae2a.mp3",
     "static/media/magicwoshoowosho.mp3": "/static/media/magicwoshoowosho.5bb024d533de8d1a7350.mp3",
     "static/media/astronaut-removebg.png": "/static/media/astronaut-removebg.e80cd8512cff001fdcfe.png",
     "static/media/twitter.png": "/static/media/twitter.e0f331100226a3022843.png",
@@ -19,17 +20,18 @@
     "static/media/mail.mp3": "/static/media/mail.942e5b141f4547645fc6.mp3",
     "static/media/rocket-removebg-preview.png": "/static/media/rocket-removebg-preview.2597dd9a1eb6d4097171.png",
     "static/media/Coin.mp3": "/static/media/Coin.1d705c2f3a2d806d75cf.mp3",
+    "static/media/glug.mp3": "/static/media/glug.3ddd62ea130a754d4ae4.mp3",
     "static/media/mario.gif": "/static/media/mario.e99dfd820c92a2bb5f6e.gif",
     "static/media/sonic_ring.webp": "/static/media/sonic_ring.72b4d6cb3991aadeefba.webp",
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.6ca120f222e2b386b36a894bba2cab7c.svg",
     "index.html": "/index.html",
     "main.7244cfb4.css.map": "/static/css/main.7244cfb4.css.map",
-    "main.154e6ba1.js.map": "/static/js/main.154e6ba1.js.map",
+    "main.c55a7c5a.js.map": "/static/js/main.c55a7c5a.js.map",
     "845.ee3bddac.chunk.js.map": "/static/js/845.ee3bddac.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7244cfb4.css",
-    "static/js/main.154e6ba1.js"
+    "static/js/main.c55a7c5a.js"
   ]
 }
