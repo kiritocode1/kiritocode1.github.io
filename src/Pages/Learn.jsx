@@ -129,7 +129,7 @@ const [boop] =useSound(moot);
   <figure><img src="https://media-exp1.licdn.com/dms/image/C4D03AQE4gsOj1lNnpQ/profile-displayphoto-shrink_400_400/0/1591319621197?e=1666224000&v=beta&t=2YFim5ZiZsPxbJsTTlne7i9QQHq0QWoDMg7Kmp0xcU0" alt="ujjwal"/></figure>
   <div class="card-body">
     <h2 class="card-title text-3xl twitter_text">Ujjwal Chadha</h2>
-            <p >Ujjwal is an absolute chad teacher , his tweets daily and i would appreciate if you can go give him a follow 
+            <p >Ujjwal is an absolute chad teacher , he tweets daily  bout codes and threads free for students to learn from  and i would appreciate if you can go give him a follow 
     </p>
     <div class="card-actions justify-end">
       <a href="https://www.eddiehub.org/"  target="_blank"  rel="noreferrer">
