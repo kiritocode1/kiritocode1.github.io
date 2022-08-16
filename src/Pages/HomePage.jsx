@@ -90,12 +90,15 @@ const HomePage = () => {
           <div className="backdrop-filter backdrop-blur-lg bg-opacity-20 z-10 bg-secondary w-full absolute h-[20rem] mono_text4 flex flex-col px-6 pt-8 text-neutral">
           
           <h1 className='text-3xl flex hover:before:content-["#"] hover:before:transition hover:before:ease-out hover:before:delay-[5000ms] hover:before:text-primary'>Socialize </h1>
-          <div className="mono_text2">Id love to talk and geek out with you 😊, on projects and jobs </div>
-            <div className="w-full  h-40 flex items-start p-4 justify-evenly flex-col flex-wrap">
+          <div className="mono_text2 font-extrabold">Id love to talk and geek out with you 😊, on projects and jobs </div>
+            <div className="w-full  h-40 flex items-start p-4 justify-evenly flex-col flex-wrap mt-4">
               <a className="btn btn-rounded flex items-center justify-evenly" href='https://twitter.com/kiritotwt1'><FiTwitter /></a>
               <a className="btn btn-rounded" href='https://www.linkedin.com/in/aryan-kathawale-8983b5171/'><AiOutlineLinkedin /></a>
-              <div>im active on other places too , checkout <TextGradient link="Socials" text="/Socials"/>
-              
+              <div>im active on other places too , checkout <TextGradient link="Socials" text="/Socials"/><br/>
+              this websites has  a lot of easter eggs 🥚<br/> that uses music <br/> if youre wearing a headset <br/> remove it . 
+              <br/>Checkout  <TextGradient link="blogs" text="/blogs"/> for latest blogs . also
+              <br/> <TextGradient link="learn" text="/learn"/> &nbsp;
+to learn with me
               </div>
           </div>
           </div>  
