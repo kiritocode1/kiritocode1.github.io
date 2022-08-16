@@ -64,6 +64,39 @@ import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 
 
+
+
+//! Import The Blogs Here . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ! ///////////////////////////////////////////////////////////////////////////////////////////
 
 function App() {
@@ -90,7 +123,7 @@ function App() {
         <Route path="/learn" element={<LearnPage/>}    />
         <Route path="/offline" element={<OfflinePage/>}    />
         <Route path="*" element={<ErrorPage/>}    />
-        <Route path="/blogs" element={<BlogsPage/>}    />
+        <Route path="/blogs" element={<BlogsPage/>} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/socials" element={<SocialsPage/>}/>
       </Routes>
