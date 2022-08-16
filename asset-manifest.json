@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9263c282.css",
-    "main.js": "/static/js/main.bab16edb.js",
+    "main.css": "/static/css/main.9f2f0e03.css",
+    "main.js": "/static/js/main.a46419eb.js",
     "static/js/845.ecc04588.chunk.js": "/static/js/845.ecc04588.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/Book-My-Show.png": "/static/media/Book-My-Show.870554659a7e51a9eae3.png",
@@ -17,6 +17,7 @@
     "static/media/mario.mp3": "/static/media/mario.7867770dd804e6d1ae2a.mp3",
     "static/media/magicwoshoowosho.mp3": "/static/media/magicwoshoowosho.5bb024d533de8d1a7350.mp3",
     "static/media/astronaut-removebg.png": "/static/media/astronaut-removebg.e80cd8512cff001fdcfe.png",
+    "static/media/koosh-brain.png": "/static/media/koosh-brain.60cd517d8a44774fdb89.png",
     "static/media/twitter.png": "/static/media/twitter.e0f331100226a3022843.png",
     "static/media/catMeow.mp3": "/static/media/catMeow.0e47bd7eebab6a57a11e.mp3",
     "static/media/BattleOfRetention.gif": "/static/media/BattleOfRetention.6530da580db17463e397.gif",
@@ -33,13 +34,13 @@
     "static/media/pop-on.mp3": "/static/media/pop-on.5f745ae57a59f150dfeb.mp3",
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.6ca120f222e2b386b36a894bba2cab7c.svg",
     "index.html": "/index.html",
-    "main.9263c282.css.map": "/static/css/main.9263c282.css.map",
-    "main.bab16edb.js.map": "/static/js/main.bab16edb.js.map",
+    "main.9f2f0e03.css.map": "/static/css/main.9f2f0e03.css.map",
+    "main.a46419eb.js.map": "/static/js/main.a46419eb.js.map",
     "845.ecc04588.chunk.js.map": "/static/js/845.ecc04588.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9263c282.css",
-    "static/js/main.bab16edb.js"
+    "static/css/main.9f2f0e03.css",
+    "static/js/main.a46419eb.js"
   ]
 }
