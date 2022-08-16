@@ -77,7 +77,7 @@ const [Popon] =useSound(popon);
   <figure class="px-10 pt-10"  onMouseEnter={()=>{sethovert(true); Popon()} } onMouseLeave={()=>sethovert(false)}>
         <a href={live} className="flex relative " 
         >
-          <div className={`z-10 absolute  w-full h-full  rounded-lg flex items-center justify-center ${hovert?"bg-white opacity-50":"invisible"} text-4xl `} >
+          <div className={`z-10 absolute  w-full h-full  rounded-lg flex items-center justify-center ${hovert?"bg-primary text-black opacity-50":"invisible"} text-4xl `} >
       <FaLink /></div>
           <img src={src} alt="Shoes" class="rounded-xl hover:ring-4 ring-accent" /></a>
   </figure>
