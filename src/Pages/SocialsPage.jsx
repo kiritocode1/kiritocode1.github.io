@@ -643,9 +643,9 @@ const [superactivated, setsuper] = useState([false, false, false, false,false]);
 </div>
 
 <div className=" w-full md:w-96 h-96 rounded-lg flex-col justify-center text-2xl mono_text2 bg-white text-neutral shadow-lg p-6 flex items-center ">
-          <div>for blogs checkout <TextGradient link="blogs" text="/blogs" /></div>
-        <div>for Offline Activities like hackathons and events checkout <TextGradient link="offline" text="/offline"/></div>
-        <div>and for learning material  <TextGradient link="learn" text="/learn"/>.</div>
+          <div>for blogs checkout <TextGradient link="/blogs" text="/blogs" /></div>
+        <div>for Offline Activities like hackathons and events checkout <TextGradient link="/offline" text="/offline"/></div>
+        <div>and for learning material  <TextGradient link="/learn" text="/learn"/>.</div>
           
 </div>
 

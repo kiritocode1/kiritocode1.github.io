@@ -28,8 +28,10 @@ import mosmi from "../ProjectPictures/Mosmi.png";
 import cgpa from "../ProjectPictures/cgpa.png";
 import BookMyShow from "../ProjectPictures/Book-My-Show.png";
 import Tasky from "../ProjectPictures/tasky.png";
-
-
+import popon from "../MoreSounds/pop-on.mp3";
+import bookapi from "../ProjectPictures/bookapi.png"
+import bj from "../ProjectPictures/bj.png";
+import euler from "../ProjectPictures/euler.png";
 
 
 
@@ -46,10 +48,11 @@ import Gulp from "../MoreSounds/glug.mp3"
 const CoolBtn = ({ element ,mariocoinsound}) => {
   const [onhovery, setonhovery] = useState(false);
   const styley = useSpring({
-    width: onhovery ? 100 : 70, 
-    height: onhovery ? 100 : 70, 
-    fontSize:onhovery?60:40
-  })
+    width: onhovery ? 100 : 70,
+    height: onhovery ? 100 : 70,
+    fontSize: onhovery ? 60 : 40
+  });
+  
 
   return (
     <a.div className="btn btn-ghost hover:text-primary btn-circle md:w-20 md:h-20 md:text-4xl text-2xl" onMouseEnter={()=>{
@@ -66,17 +69,23 @@ const CoolBtn = ({ element ,mariocoinsound}) => {
   )
 }
 
-const CardForProjects = ({src,live,title,context , badges , code}) => {
+const CardForProjects = ({ src, live, title, context, badges, code }) => {
+const [Popon] =useSound(popon);
+  const [hovert, sethovert] = useState(false);
   return (
     <div class="card w-96 bg-base-400 shadow-xl">
-  <figure class="px-10 pt-10">
-    <a href={live}><img src={src} alt="Shoes" class="rounded-xl hover:ring-4 ring-white" /></a>
+  <figure class="px-10 pt-10"  onMouseEnter={()=>{sethovert(true); Popon()} } onMouseLeave={()=>sethovert(false)}>
+        <a href={live} className="flex relative " 
+        >
+          <div className={`z-10 absolute  w-full h-full  rounded-lg flex items-center justify-center ${hovert?"bg-white opacity-50":"invisible"} text-4xl `} >
+      <FaLink /></div>
+          <img src={src} alt="Shoes" class="rounded-xl hover:ring-4 ring-accent" /></a>
   </figure>
   <div class="card-body items-center text-center">
-    <h2 class="card-title">{title}</h2>
+    <h2 class="card-title twitter_text">{title}</h2>
         <p>{context}</p>
         <div className="w-full flex flex-wrap items-center  justify-end">
-          {badges.map(badge=><div className="badge  badge-accent"><BsFillPatchQuestionFill/>{badge}</div>)}
+          {badges.map(badge=><div className="badge  badge-accent flex gap-2"><BsFillPatchQuestionFill/>{badge}</div>)}
         </div>
         <div class="card-actions">
       <a href={code}><button class="btn btn-primary"><BsFileEarmarkCodeFill/>Checkout Code</button></a>
@@ -148,7 +157,7 @@ const ProjectsPage = () => {
         <CoolBtn element={<SiTensorflow />} mariocoinsound={gulp}/>
         <CoolBtn element={<SiKubernetes />} mariocoinsound={gulp}/>
         <CoolBtn element={<SiFirebase/>} mariocoinsound={gulp}/>
-
+        {/* i didnt write this , this is script written  lol, */}
         
         
       </div>
@@ -171,7 +180,7 @@ const ProjectsPage = () => {
 </div>
       </div>
 
-      <div className="mb-40 mt-60 text-6xl heroMarkup relative flex">
+      <div className="mb-40 mt-10 text-6xl heroMarkup relative flex">
         <div>Projects</div>
         <div className="w-8 absolute z-10 top-[1.09rem] left-[4.12rem] bg-base-100 " onClick={()=>mariocoinsound()}>
           <img src={MarioCoin} alt="coiny2"  />
@@ -180,19 +189,41 @@ const ProjectsPage = () => {
 
       <div className="   flex flex-wrap items-center justify-evenly gap-10 mb-10">
 
-                <CardForProjects src={BookMyShow} live="https://tailwind-css-beginner-practice-bms.vercel.app/" title="Personal Website" context="this is a private website for my sister as a birthday gift , 🎂" code="https://github.com/kiritocode1/React-Subject/nukes/" badges={["html", "css", "js", "react", "animations"]} />
+                <CardForProjects src={BookMyShow} live="https://tailwind-css-beginner-practice-bms.vercel.app/" title="Book My Show Clone" context="Book My Show Clone Using Front End and TMDB API for the data and payement gateway" code="https://github.com/kiritocode1/React-Subject/nukes/" badges={["html", "css", "js", "react", "animations","API","Mongoose" , ]} />
 
 
 
         {/*! src,live,title,context , badges , code */}
         <CardForProjects src={mosmi} live="https://mosmikathawale.vercel.app/" title="Personal Website" context="this is a private website for my sister as a birthday gift , 🎂" code="https://github.com/kiritocode1/tailwind-css-beginner-practice" badges={["html", "css", "js", "react", "animations"]} />
 
-                <CardForProjects src={cgpa} live="https://cgpa-to-percentage.vercel.app/ " title="Cgpa-to-percentage converter" context="crude website to convert cgpa to percentage done by my team in 2 hours" code="https://github.com/kiritocode1/Cgpa-to-percentage" badges={["html", "css", "js", "react", "animations"]} />
-        {/* 
-        https://github.com/kiritocode1/Tasky-Project
-        https://kiritocode1.github.io/Tasky-Project/
-        
-        */}
+                <CardForProjects src={cgpa} live="https://cgpa-to-percentage.vercel.app/ " title="Cgpa-to-percentage converter" context="crude website to convert cgpa to percentage done by my team in 2 hours, i coded the basic layout by the data and algorithm provided by the team" code="https://github.com/kiritocode1/Cgpa-to-percentage" badges={["html", "css", "js", "react", "animations","Vercel" ]} />
+
+                <CardForProjects src={Tasky} live="https://kiritocode1.github.io/Tasky-Project/
+" title="Tasky task manager" context="Tasky Is a taskbar app , very fast and written in vanilla javascript .  " code=" https://github.com/kiritocode1/Tasky-Project
+" badges={["html", "css", "Vanillajs", "react", "animations","Chrome Devtools","Open Source"]} />
+
+
+
+
+
+                <CardForProjects src={bookapi} live="https://github.com/kiritocode1/book-API-project" title="Book API" context="An api to store and get books data in MongoDB" code="https://github.com/kiritocode1/book-API-project
+" badges={["Backend" , "express" ,"API", "MongoDB", "axios"]} />
+
+
+
+
+                <CardForProjects src={bj} live="https://github.com/kiritocode1/BRAIN_JUICE_NOTES" title="Zero to Pro Guide" context="a MD project open source to get all the resources we find on the web into a single repo" code="https://github.com/kiritocode1/BRAIN_JUICE_NOTES
+" badges={["Markdown", "Open Source"]} />
+
+
+
+
+
+                <CardForProjects src={euler} live="https://projecteuler.net/" title="Project euler" context="the source code for solving the hardest problems on the internet reguarding computer science" code="https://github.com/kiritocode1/test1
+" badges={["python", "dsa"]} />
+
+
+
       </div>
       
       </div>
