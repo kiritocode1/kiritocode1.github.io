@@ -29,7 +29,7 @@ const ContactEmail = () => {
 
             <input type="text" name="user_name" className="input input-ghost w-full max-w-xs shadow-lg  mono_text1 placeholder:text-neutral" Placeholder="Mx. Human Name" />
 
-            <input type="email" name="user_email" className="input input-ghost w-[30rem] max-w-full shadow-lg  mono_text1 placeholder:text-neutral focus:invalid:border-error focus:invalid:ring-error" placeholder="YourHumanEmail @ bigcompanythatsellsdata.com" />
+            <input type="email" name="user_email" className="input input-ghost w-[30rem] max-w-full shadow-lg  mono_text1 placeholder:text-neutral focus:invalid:border-error focus:invalid:ring-error placeholder:text-xs" placeholder="YourHumanEmail @ bigcompanythatsellsdata.com" />
 
 
             <div className="w-full flex items-center justify-evenly ">
