@@ -15,7 +15,7 @@ const [boop] =useSound(moot);
     loop: { reverse: true },
     config:{duration:6000}
   })
-  const quotes = ["Fail Faster","Question Everything", "think Openly.","Worry Less","imagine Loudly","Be Wierd","Hakuna Matata!","Help Others"]
+  const quotes = ["Fail Faster","Question Everything", "think Openly.","Worry Less","imagine Loudly","Be Wierd","Hakuna Matata!","Help Others","cogito ergo sum"]
   return (
     <div className="w-full  flex flex-col items-center justify-center ">
       <a.div style={{...brainStyle}} className="bg-clip"><img src={kooshbrain} alt="imagebrain" classNAme="hover:ring-8" /></a.div>
