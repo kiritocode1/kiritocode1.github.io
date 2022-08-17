@@ -40,8 +40,8 @@ const BlogsPage = () => {
 
                         <Card element={<SiMedium className="absolute text-9xl top-[10rem] rotate-[45deg] left-40"/>}  Name="Medium" Context="its awesome , no contest, one of the most interactive and intuitive interfaces ive ever seen , fast architexture and much more "    link="https://medium.com/@kathawalearyan"/>
       </div>
-      <div className="w-full h-[50rem] flex flex-col ">
-        <div className="text-xl">if you want to know my future plans</div>
+      <div className="w-full h-[50rem] flex flex-col twitter_text">
+        <div className="text-3xl">if you want to know my future plans</div>
         <ul class="steps steps-vertical lg:steps-horizontal">
   <li class="step step-primary" data-content="✓">Make this site</li>
   <li class="step step-primary">Plan a structure for devs to contribute</li>
