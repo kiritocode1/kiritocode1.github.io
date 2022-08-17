@@ -3,7 +3,7 @@ import booklol from "../ProjectPictures/booklol copy.webp"
 import { useSpring,animated as a  } from 'react-spring'
 const BlogsPage = () => {
   const stylie = useSpring({
-    from: { y: -50 }, y: -100,
+    from: { y: -50, rotatez:10 }, y: -100,rotatez:-10,
     config: { duration: 13000 },
     loop:{reverse:true}
   })
