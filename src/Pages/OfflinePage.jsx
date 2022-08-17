@@ -9,6 +9,9 @@ import { SiGooglefit } from "react-icons/si";
 import { ImInstagram } from "react-icons/im";
 import ask from "../ProjectPictures/downthing.webp";
 import { TbCornerLeftDown } from "react-icons/tb";
+import vib from "../ProjectPictures/vib.jpg";
+import { FaCrown } from "react-icons/fa";
+
 const OfflinePage = () => {
   const [ping] = useSound(gulgb)
   const [ishy] = useSound(ish);
@@ -42,23 +45,52 @@ const OfflinePage = () => {
             <button class="btn btn-primary flex items-center justify-evenly gap-2" onMouseEnter={ishy}><SiGooglefit /> her Twitter</button></a>
     </div>
   </div>
-</div>
+        </div>
     
       <div class="card card-compact w-96 bg-base-100 shadow-xl">
   <figure><img src={kaus}alt="kaustubh" /></figure>
   <div class="card-body">
     <h2 class="card-title twitter_text ">Kaustubh Mahalle (Web Developer / Student)</h2>
     <p className="mono_text4">
-      [enter text here] 
+      I just wanted to share a quick note and let you know that aryan is doing really good job. Ill be glad to to work with him in future.
     </p>
     <div class="card-actions justify-end">
             <a href="https://www.instagram.com/kaustubh__023/" target="_blank" rel="noreferrer">
             <button class="btn btn-primary flex items-center justify-evenly  gap-2" onMouseEnter={ishy}><ImInstagram />his insta</button></a>
     </div>
   </div>
+        </div>
+
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure><img src={vib}alt="vibwhore" /></figure>
+  <div class="card-body">
+    <h2 class="card-title twitter_text " >Vibwhore Sharma (he/him)</h2>
+    <p className="mono_text4">
+            Aryan is honestly a very cool guy , he helps when he can and spends time with me . I really like his attitude towards teaching and helping others .  
+    </p>
+    <div class="card-actions justify-end">
+            <a href="https://www.instagram.com/vibhor21_/?hl=en" target="_blank" rel="noreferrer">
+            <button class="btn btn-primary flex items-center justify-evenly gap-2" onMouseEnter={ishy}><FaCrown />His instagram</button></a>
+    </div>
+  </div>
 </div>
+    
+    
       </div>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="flex items-center justify-center twitter_text px-6">
         <img src={ask} alt="down" className='w-60' />
         <div className='flex gap-2 items-start h-40 justify-center text-end'>
