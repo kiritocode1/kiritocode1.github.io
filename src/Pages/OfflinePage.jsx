@@ -64,7 +64,7 @@ const OfflinePage = () => {
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
   <figure><img src={vib}alt="vibwhore" /></figure>
   <div class="card-body">
-    <h2 class="card-title twitter_text " >Vibwhore Sharma (he/him)</h2>
+    <h2 class="card-title twitter_text " >Vibhor Sharma (he/him)</h2>
     <p className="mono_text4">
             Aryan is honestly a very cool guy , he helps when he can and spends time with me . I really like his attitude towards teaching and helping others .  
     </p>
