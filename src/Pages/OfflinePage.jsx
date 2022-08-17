@@ -1,6 +1,6 @@
 import React from 'react'
 import gulgb from "../MoreSounds/rising-pops.mp3";
-import ish from "../MoreSounds/enable-sound.mp3";
+import ish from "../MoreSounds/plunger.mp3";
 import kaus from "../ProjectPictures/Kaustubh.jpg";
 import useSound from 'use-sound';
 import meinspace from "../ProjectPictures/astro3d.webp";
@@ -23,9 +23,10 @@ const OfflinePage = () => {
         About Me Offline
       </div>
       <div className='w-full px-14 '>
+        Hey INTERNET , im Aryan btw you can call me <b className="text-accent">Aaron</b> if my name is hard to pronounce ,
         Im into all sorts of things , im part of many many communities 
         like <a className="btn btn-ghost" onMouseEnter={()=>ping()}   href="https://github.com/orgs/community/discussions/">GhCommuninity</a>,
-        <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://eddiehub.org">Eddiehub</a>, <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://www.commclassroom.org/">ComClassRoom</a> , <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://mlh.io/">MLH</a>  and now recently <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://gdsc.community.dev/nbn-sinhgad-school-of-engineering-pune/">GDSC</a> . Ive taken part in some offline  hackathons  (although covid made that harder and harder) and ive interacted with tech twitter many times . I Love what i do and want to share the joy of Computer programming to everyone i come across .I also want to be an astronaut , please make me one if someone from Nasa is reading this .btw you can call me <b className="text-accent">AARON</b> if my name is hard to pronounce , also im an INTP.Please read some of the testimonials and what people think about me . 
+        <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://eddiehub.org">Eddiehub</a>, <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://www.commclassroom.org/">ComClassRoom</a> , <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://mlh.io/">MLH</a>  and now recently <a className="btn btn-ghost" onMouseEnter={() => ping()} href="https://gdsc.community.dev/nbn-sinhgad-school-of-engineering-pune/">GDSC</a> . Ive taken part in some offline  hackathons  (although covid made that harder and harder) and ive interacted with tech twitter many times . I Love what i do and want to share the joy of Computer programming to everyone i come across .I also want to be an astronaut , please make me one if someone from Nasa is reading this . also im an INTP.Please read some of the testimonials and what people think about me .  
       </div>
             <div className="text-4xl twitter_text my-10">
         Testimonials. 
