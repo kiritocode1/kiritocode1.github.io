@@ -1,6 +1,6 @@
 import React from 'react'
 
-import btn from "../../Sounds/btn.mp3"
+import btn from "../../MoreSounds/switch-on.mp3"
 import useSound from "use-sound"
 const MainButton = ({ Color = "primary", value = "btn", theme = "lofi" }) => {
   const [cliggity]=useSound(btn)
