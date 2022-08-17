@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.93f3666d.css",
-    "main.js": "/static/js/main.286d2153.js",
+    "main.css": "/static/css/main.b29eceac.css",
+    "main.js": "/static/js/main.753e4b29.js",
     "static/js/845.ecc04588.chunk.js": "/static/js/845.ecc04588.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/Book-My-Show.png": "/static/media/Book-My-Show.870554659a7e51a9eae3.png",
@@ -16,6 +16,7 @@
     "static/media/bye.mp3": "/static/media/bye.9f0d9b3017bc494da852.mp3",
     "static/media/mario.mp3": "/static/media/mario.7867770dd804e6d1ae2a.mp3",
     "static/media/magicwoshoowosho.mp3": "/static/media/magicwoshoowosho.5bb024d533de8d1a7350.mp3",
+    "static/media/booklol copy.webp": "/static/media/booklol copy.2cf035069ae16e3d8ff9.webp",
     "static/media/astronaut-removebg.png": "/static/media/astronaut-removebg.e80cd8512cff001fdcfe.png",
     "static/media/downthing.webp": "/static/media/downthing.706752df1deafe55050f.webp",
     "static/media/astro3d.webp": "/static/media/astro3d.33be561065a916834e48.webp",
@@ -42,13 +43,13 @@
     "static/media/pop-on.mp3": "/static/media/pop-on.5f745ae57a59f150dfeb.mp3",
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.6ca120f222e2b386b36a894bba2cab7c.svg",
     "index.html": "/index.html",
-    "main.93f3666d.css.map": "/static/css/main.93f3666d.css.map",
-    "main.286d2153.js.map": "/static/js/main.286d2153.js.map",
+    "main.b29eceac.css.map": "/static/css/main.b29eceac.css.map",
+    "main.753e4b29.js.map": "/static/js/main.753e4b29.js.map",
     "845.ecc04588.chunk.js.map": "/static/js/845.ecc04588.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93f3666d.css",
-    "static/js/main.286d2153.js"
+    "static/css/main.b29eceac.css",
+    "static/js/main.753e4b29.js"
   ]
 }
