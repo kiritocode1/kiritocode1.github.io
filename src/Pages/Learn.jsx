@@ -112,7 +112,7 @@ const [boop] =useSound(moot);
   <figure><img src="https://pbs.twimg.com/media/FZ28NIfUIAIChnI?format=jpg&name=small" alt="Album"/></figure>
   <div class="card-body">
     <h2 class="card-title text-3xl twitter_text">Naomi Carrigan</h2>
-            <p >
+            <p>
            Naomi is one of the smartest people i know , trust me she can do more than many people can dream of , please follow her  , i learnt  discord.js and typescript entirely just by existing on her discord
     </p>
     <div class="card-actions justify-end">

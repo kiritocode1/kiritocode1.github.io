@@ -221,7 +221,7 @@ const ProjectsPage = () => {
 
                 <CardForProjects src={euler} live="https://projecteuler.net/" title="Project euler" context="the source code for solving the hardest problems on the internet reguarding computer science" code="https://github.com/kiritocode1/test1
 " badges={["python", "dsa"]} />
-
+ 
 
 
       </div>
