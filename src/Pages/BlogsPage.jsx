@@ -1,14 +1,18 @@
 import React from 'react'
-import { BiErrorCircle } from "react-icons/bi"
-
+import booklol from "../ProjectPictures/booklol copy.webp"
+import { useSpring,animated as a  } from 'react-spring'
 const BlogsPage = () => {
+  const stylie = useSpring({
+    from: { y: -50 }, y: -100,
+    config: { duration: 13000 },
+    loop:{reverse:true}
+  })
   return (
-        <div className="w-full h-96 flex flex-col items-center justify-center">
-      BlogsPage
-      <BiErrorCircle className="w-40 h-40"/>
-
-      <div className="text-4xl mono_text1">UMM ... 404? </div>
-      <div>work in progress</div>
+    <div className="w-full  flex flex-col items-center justify-center">
+      <div className="flex w-full items-center justify-center gap-2 relative">
+      <div className=" absolute text-accent text-6xl mono_text4 ">I Love Reading</div>
+      <a.img src={booklol} alt="hehehe" className="w-40  z-10" style={{...stylie}}/>
+      </div>
     </div>
   )
 }
