@@ -10,7 +10,9 @@ import { ImInstagram } from "react-icons/im";
 import ask from "../ProjectPictures/downthing.webp";
 import { TbCornerLeftDown } from "react-icons/tb";
 import vib from "../ProjectPictures/vib.jpg";
-import { FaCrown } from "react-icons/fa";
+import { FaCrown,FaTwitter } from "react-icons/fa";
+import sourav from "../ProjectPictures/sourav.jpg";
+// https://pbs.twimg.com/profile_images/1540053378385907712/lB-9jaUh_400x400.jpg
 
 const OfflinePage = () => {
   const [ping] = useSound(gulgb)
@@ -74,8 +76,21 @@ const OfflinePage = () => {
             <button class="btn btn-primary flex items-center justify-evenly gap-2" onMouseEnter={ishy}><FaCrown />His instagram</button></a>
     </div>
   </div>
+        </div>
+      
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure><img src={sourav}alt="souravpaul" /></figure>
+  <div class="card-body">
+    <h2 class="card-title twitter_text " >Sourav Paul (upcoming Engineer)</h2>
+            <p className="mono_text4">
+              f you are looking for a Developer to work and to collaborate with, Aryan has good practical real world knowledge and experience on almost every different domains. Very Inclusive, open and interested to different opinions and perspectives plus empathetic.
+    </p>
+    <div class="card-actions justify-end">
+            <a href="https://twitter.com/paulmak33" target="_blank" rel="noreferrer">
+            <button class="btn btn-primary flex items-center justify-evenly gap-2" onMouseEnter={ishy}><FaTwitter />His twitter</button></a>
+    </div>
+  </div>
 </div>
-    
     
       </div>
 
