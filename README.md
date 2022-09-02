@@ -9,7 +9,7 @@
 ## this is the new  mandatory website i made using github and using react app . [learn_more_bout_me](https://github.com/kiritocode1) 
 <!--! to learn more on how i deployed this go and watch -> https://www.youtube.com/watch?v=F8s4Ng-re0E -->
 
-<h2>the things i used are -><h2>
+<h2>the things i used are listed here-><h2>
 
 - react ❤️
 - npm 😍
