@@ -12,12 +12,46 @@ const Card = ({element,Name, Context, link}) => {
         <h2 class="card-title twitter_text text-2xl">{Name}</h2>
         <p>{Context}</p>
         <div class="card-actions justify-end">
-          <a className="btn " href={link} >Read Here</a>
+          <a className="btn " href={link} >Read Here 😊</a>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
+
+
+const BlogCard = ({heading , explaining , link}) => {
+  return (
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body">
+    <h2 className="card-title mono_text1 ">{heading}</h2>
+    <p>{explaining}</p>
+        <div className="card-actions justify-end">
+        <a href={`https://kiritocode1.github.io/${link}/`}  target="_blank"  rel="noreferrer" >
+      <button className="btn btn-primary">Read here 😍</button></a>
+    </div>
+  </div>
+</div>
+  );
+}
+
+const BlogList = [
+  { "heading": "HTML 😍 ZERO to hero", "explaining": "this blog covers basics of HTML , written in React , is interactive and fun ❤️❤️❤️ for beginners", "link": "html" }, 
+  { "heading": "Python 🐍 ZERO to hero", "explaining": "this blog covers basics of Python Programming language , written in svelte , is interactive and fun ❤️❤️❤️ for beginners", "link": "python" }, 
+  { "heading": "CSS , Revealing the Magic [ PART_1] ", "explaining": " Learn why CSS is Magic, in an intuitive way ", "link": "css_basics" }, 
+  { "heading": "how I made this Website ", "explaining": "this Blog Covers the tools i used to make this website , this is written in NEXT + React  , is fun ", "link": "how_i_made_this_website" }, 
+  { "heading": "DOCKER 🐳 Basics", "explaining": " Interactive Docker  introduction , Written In NEXT JS ", "link": "docker_basics" }, 
+
+
+  
+  
+  
+]
+
 
 
 
@@ -40,18 +74,24 @@ const BlogsPage = () => {
 
                         <Card element={<SiMedium className="absolute text-9xl top-[10rem] rotate-[45deg] left-40"/>}  Name="Medium" Context="its awesome , no contest, one of the most interactive and intuitive interfaces ive ever seen , fast architexture and much more "    link="https://medium.com/@kathawalearyan"/>
       </div>
-      <div className="w-full h-[50rem] flex flex-col twitter_text">
-        <div className="text-3xl">if you want to know my future plans</div>
+      <div className="w-full  flex flex-col twitter_text">
+        <div className="text-3xl">know my future plans For Blogs </div>
         <ul class="steps steps-vertical lg:steps-horizontal">
   <li class="step step-primary" data-content="✓">Make this site</li>
   <li class="step step-primary">Plan a structure for devs to contribute</li>
-  <li class="step">get active contributions</li>
-          <li class="step">Receive Sponsors
+  <li class="step step-primary">get active contributions</li>
+          <li class="step">Receive Sponsors 💵
           </li>
                     <li class="step" data-content="★">Payback to Contributors
 </li>
 </ul>
       </div>
+            <div className='flex  flex-wrap gap-6  justify-center align-center my-6 '>
+          {BlogList.map(blog => 
+            <BlogCard heading={blog.heading} link={blog.link} explaining={blog.explaining}/>
+          )}
+
+          </div>
       </div>
     
   )
