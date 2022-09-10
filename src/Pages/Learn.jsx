@@ -11,23 +11,33 @@ import useSound from "use-sound";
 
 
 
-const BlogCard = () => {
+const BlogCard = ({heading , explaining , link}) => {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="https://placeimg.com/400/400/arch" alt="Album"/></figure>
+    <div className="card w-96 bg-base-100 shadow-xl">
   <div className="card-body">
-    <h2 className="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Listen</button>
+    <h2 className="card-title mono_text1 ">{heading}</h2>
+    <p>{explaining}</p>
+        <div className="card-actions justify-end">
+        <a href={`https://kiritocode1.github.io/${link}/`}  target="_blank"  rel="noreferrer" >
+      <button className="btn btn-primary">here</button></a>
     </div>
   </div>
 </div>
-  )
+  );
 }
 
+const BlogList = [
+  { "heading": "HTML 😍 ZERO to hero", "explaining": "this blog covers basics of HTML , written in React , is interactive and fun ❤️❤️❤️ for beginners", "link": "html" }, 
+  { "heading": "Python 🐍 ZERO to hero", "explaining": "this blog covers basics of Python Programming language , written in svelte , is interactive and fun ❤️❤️❤️ for beginners", "link": "python" }, 
+  { "heading": "CSS , Revealing the Magic [ PART_1] ", "explaining": " Learn why CSS is Magic, in an intuitive way ", "link": "css_basics" }, 
+  { "heading": "how I made this Website ", "explaining": "this Blog Covers the tools i used to make this website , this is written in NEXT + React  , is fun ", "link": "how_i_made_this_website" }, 
+  { "heading": "DOCKER 🐳 Basics", "explaining": " Interactive Docker  introduction , Written In NEXT JS ", "link": "docker_basics" }, 
 
 
+  
+  
+  
+]
 
 
 const LearnPage = () => {
@@ -55,13 +65,18 @@ const [boop] =useSound(moot);
           this is just  a private repo for all the resources and topics and things to cover including web dev , full stack 
           Data Structures and Much More .  start reading . this is the fastest way to learn and costs free. also  the topics will each be a new repo . if you want to update the repo you can do  by visiting the end of the page and clicking on the link there . if you make a new topic you want to add , add an issue to this repo and ill do it  . also thank you for checking out my profile . 
         </div>
-        <div className="w-full flex justify-center items-center h-[30rem]">
-        <div className="mx-2 border-primary border-dashed border-4   rounded-xl text-2xl mono_text4">
-          simply do kiritocode1.github.io/topic
+        <div className="w-full flex justify-center items-center h-[30rem] flex-col  gap-4">
+        <div className="mx-2 border-primary border-dashed border-4    p-2 rounded-xl text-2xl mono_text4">
+          simply do kiritocode1.github.io/topic/
           </div>
+
         </div>
+        <div className='flex  flex-wrap gap-6  justify-center align-center mb-20'>
+          {BlogList.map(blog => 
+            <BlogCard heading={blog.heading} link={blog.link} explaining={blog.explaining}/>
+          )}
 
-
+          </div>
 
         <div className="text-4xl twitter_text
         ">People i Reccomend You to Follow</div>
@@ -172,7 +187,7 @@ const [boop] =useSound(moot);
             <p >Robin is software engineer at google , he is awesome and deserves more love than here please go follow him , he'll surely help you .
     </p>
     <div class="card-actions justify-end">
-      <a href="https://www.linkedin.com/in/ujjwalchadha8/"  target="_blank"  rel="noreferrer">
+      <a href="https://twitter.com/imrobin407"  target="_blank"  rel="noreferrer">
       <button class="btn btn-primary" onMouseEnter={()=>boop()}>Follow Him</button></a>
     </div>
   </div>
