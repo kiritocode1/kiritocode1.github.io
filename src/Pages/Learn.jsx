@@ -56,7 +56,9 @@ const [boop] =useSound(moot);
           Data Structures and Much More .  start reading . this is the fastest way to learn and costs free. also  the topics will each be a new repo . if you want to update the repo you can do  by visiting the end of the page and clicking on the link there . if you make a new topic you want to add , add an issue to this repo and ill do it  . also thank you for checking out my profile . 
         </div>
         <div className="w-full flex justify-center items-center h-[30rem]">
-          <BlogCard/>
+        <div className="mx-2 border-primary border-dashed border-4   rounded-xl text-2xl mono_text4">
+          simply do kiritocode1.github.io/topic
+          </div>
         </div>
 
 
