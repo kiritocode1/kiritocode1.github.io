@@ -7,6 +7,29 @@ import {IoGlassesSharp} from "react-icons/io5";
 import {GiLoveSong,GiEgyptianBird} from "react-icons/gi";
 import moot from "../MoreSounds/boop.mp3"; 
 import useSound from "use-sound";
+
+
+
+
+const BlogCard = () => {
+  return (
+    <div className="card lg:card-side bg-base-100 shadow-xl">
+  <figure><img src="https://placeimg.com/400/400/arch" alt="Album"/></figure>
+  <div className="card-body">
+    <h2 className="card-title">New album is released!</h2>
+    <p>Click the button to listen on Spotiwhy app.</p>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">Listen</button>
+    </div>
+  </div>
+</div>
+  )
+}
+
+
+
+
+
 const LearnPage = () => {
 const [boop] =useSound(moot);
   const brainStyle = useSpring({
@@ -33,9 +56,8 @@ const [boop] =useSound(moot);
           Data Structures and Much More .  start reading . this is the fastest way to learn and costs free. also  the topics will each be a new repo . if you want to update the repo you can do  by visiting the end of the page and clicking on the link there . if you make a new topic you want to add , add an issue to this repo and ill do it  . also thank you for checking out my profile . 
         </div>
         <div className="w-full flex justify-center items-center h-[30rem]">
-        <div className="mx-2 border-primary border-dashed border-4   rounded-xl text-xl mono_text4">
-          insert the  Blog Posts here 
-        </div></div>
+          <BlogCard/>
+        </div>
 
 
 
