@@ -11,7 +11,9 @@ import useSound from "use-sound";
 
 
 
-const BlogCard = ({heading , explaining , link}) => {
+const BlogCard = ({ heading, explaining, link }) => {
+const [boop] =useSound(moot);
+  
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
   <div className="card-body">
@@ -19,7 +21,7 @@ const BlogCard = ({heading , explaining , link}) => {
     <p>{explaining}</p>
         <div className="card-actions justify-end">
         <a href={`https://kiritocode1.github.io/${link}/`}  target="_blank"  rel="noreferrer" >
-      <button className="btn btn-primary">here</button></a>
+      <button className="btn btn-primary"  onMouseEnter={()=>boop()} >here</button></a>
     </div>
   </div>
 </div>
