@@ -32,7 +32,8 @@ import popon from "../MoreSounds/pop-on.mp3";
 import bookapi from "../ProjectPictures/bookapi.png"
 import bj from "../ProjectPictures/bj.png";
 import euler from "../ProjectPictures/euler.png";
-
+import sonicpi from "../ProjectPictures/Sonic-Pi.png"; 
+import vcard from "../ProjectPictures/kiritocode1-npm.png";
 
 
 
@@ -223,6 +224,15 @@ const ProjectsPage = () => {
 " badges={["python", "dsa"]} />
  
 
+
+                <CardForProjects src={sonicpi} live="https://github.com/kiritocode1/levels-live.git" title="Music In SonicPI" context="This Is the Repo for the song Levels (by Avicii) that i wrote in Sonicpi which compiles this to Rust, learnt in a single night  " code="https://github.com/kiritocode1/levels-live
+" badges={["Rust", "Sonicpi", "Music"]} />
+
+        
+
+                <CardForProjects src={vcard} live="https://www.npmjs.com/package/kiritocode1" title="NPM Virtual Card " context="Packages and publishing packages , try 'npx kiritocode1' , if you have npm installed " code="https://github.com/kiritocode1/
+" badges={["NPM", "Javascript", "github"]} />
+ 
 
       </div>
       

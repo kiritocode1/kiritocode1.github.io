@@ -80,7 +80,7 @@ const HomePage = () => {
 
         <div className=" bg-neutral w-full rounded-xl h-[20rem] text-white flex flex-col gap-4 pt-8 px-6">
           <h1 className='text-3xl flex mono_text4'>About Me👋</h1>
-          <div className="mono_text2 font-extrabold flex  text-start w-full flex-wrap"><b className="flex shrink-0">hello there  , im Aryan kathawale ,<br/> Im a 19 yr old </b> <TextGradient text="Computer Programmer" link="projects" /> <b className="flex shrink-0 flex-wrap">based in India, I focus Mostly on &nbsp;</b> 
+          <div className="mono_text2 font-extrabold flex  text-start w-full flex-wrap"><b className="flex shrink-0">hello there  , im Aryan kathawale ,<br/> a 19 yr old </b> <TextGradient text="Computer Programmer" link="projects" /> <b className="flex shrink-0 flex-wrap">based in India, I focus Mostly on &nbsp;</b> 
             <TextGradient text="Open Source &nbsp;" link="offline" />
             <b className="flex shrink-0 flex-wrap">projects </b> 
             <b className="flex shrink-0 flex-wrap">  and cool technologies , i believe <br />and work towards<br />  a society  based on  Curiosity and <br /> Collaboration.  </b> 
@@ -96,7 +96,7 @@ const HomePage = () => {
               <a className="btn btn-rounded" href='https://www.linkedin.com/in/aryan-kathawale-8983b5171/'><AiOutlineLinkedin /></a>
               <div className="flex flex-wrap"> checkout <TextGradient link="Socials" text="/Socials"/>
               ,&nbsp; <TextGradient link="blogs" text="/blogs"/>&nbsp; & <TextGradient link="learn" text="/learn"/>
-              btw , try double-tapping name!!!
+              try double-tapping name!!!
               </div>
           </div>
           </div>  
