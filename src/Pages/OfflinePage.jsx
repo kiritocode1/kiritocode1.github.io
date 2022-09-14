@@ -33,7 +33,7 @@ const OfflinePage = () => {
             <div className="text-4xl twitter_text my-10">
         Testimonials. 
       </div>
-<div className="w-full flex flex-wrap items-center justify-evenly mb-20">
+<div className="w-full flex flex-wrap items-center justify-evenly mb-20 gap-10">
       <div class="card card-compact w-96 bg-base-100 shadow-xl">
   <figure><img src={ishwari}alt="ishwari" /></figure>
   <div class="card-body">
