@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.d8fde4d3.css",
-    "main.js": "/static/js/main.d87b003e.js",
+    "main.js": "/static/js/main.c98be1c2.js",
     "static/js/845.ecc04588.chunk.js": "/static/js/845.ecc04588.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/Book-My-Show.png": "/static/media/Book-My-Show.870554659a7e51a9eae3.png",
     "static/media/spacefor2.mp3": "/static/media/spacefor2.6fcdcf89d50c8a2367ab.mp3",
+    "static/media/Aryan_Kathawale_.pdf": "/static/media/Aryan_Kathawale_.8e8bf3c6b5c25f9367fd.pdf",
     "static/media/cgpa.png": "/static/media/cgpa.c69d12bb16d964d8a264.png",
     "static/media/euler.png": "/static/media/euler.6df9ad66a298c9a3d13f.png",
     "static/media/me.png": "/static/media/me.2ae718c44c052e65aaf0.png",
@@ -27,7 +28,6 @@
     "static/media/catMeow.mp3": "/static/media/catMeow.0e47bd7eebab6a57a11e.mp3",
     "static/media/BattleOfRetention.gif": "/static/media/BattleOfRetention.6530da580db17463e397.gif",
     "static/media/rocket_not_removed-removebg.png": "/static/media/rocket_not_removed-removebg.ae2a849ef2872f484f3e.png",
-    "static/media/Aryan_Kathawale_.pdf": "/static/media/Aryan_Kathawale_.aa18e20ee53dbbb448f9.pdf",
     "static/media/ishwari.webp": "/static/media/ishwari.6ea334d6882c0e9adef2.webp",
     "static/media/fourofour.png": "/static/media/fourofour.4edc35c27d8de74e0f27.png",
     "static/media/vib.jpg": "/static/media/vib.8ac553fa7a98c917fdb5.jpg",
@@ -48,12 +48,12 @@
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.6ca120f222e2b386b36a894bba2cab7c.svg",
     "index.html": "/index.html",
     "main.d8fde4d3.css.map": "/static/css/main.d8fde4d3.css.map",
-    "main.d87b003e.js.map": "/static/js/main.d87b003e.js.map",
+    "main.c98be1c2.js.map": "/static/js/main.c98be1c2.js.map",
     "845.ecc04588.chunk.js.map": "/static/js/845.ecc04588.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8fde4d3.css",
-    "static/js/main.d87b003e.js"
+    "static/js/main.c98be1c2.js"
   ]
 }
