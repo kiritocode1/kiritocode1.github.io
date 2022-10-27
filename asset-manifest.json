@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.d8fde4d3.css",
-    "main.js": "/static/js/main.c98be1c2.js",
+    "main.js": "/static/js/main.537d78a1.js",
     "static/js/845.ecc04588.chunk.js": "/static/js/845.ecc04588.chunk.js",
     "static/js/787.7086e8a4.chunk.js": "/static/js/787.7086e8a4.chunk.js",
     "static/media/Book-My-Show.png": "/static/media/Book-My-Show.870554659a7e51a9eae3.png",
     "static/media/spacefor2.mp3": "/static/media/spacefor2.6fcdcf89d50c8a2367ab.mp3",
-    "static/media/Aryan_Kathawale_.pdf": "/static/media/Aryan_Kathawale_.8e8bf3c6b5c25f9367fd.pdf",
     "static/media/cgpa.png": "/static/media/cgpa.c69d12bb16d964d8a264.png",
     "static/media/euler.png": "/static/media/euler.6df9ad66a298c9a3d13f.png",
     "static/media/me.png": "/static/media/me.2ae718c44c052e65aaf0.png",
@@ -14,6 +13,7 @@
     "static/media/bookapi.png": "/static/media/bookapi.f2d2633b78b3b3bda189.png",
     "static/media/Mosmi.png": "/static/media/Mosmi.f6e99244abd7e5a22b8f.png",
     "static/media/Sonic-Pi.png": "/static/media/Sonic-Pi.67f5c3921e105b6a263e.png",
+    "static/media/Aryan_Kathawale_.pdf": "/static/media/Aryan_Kathawale_.cbd3ad9ad555ecad0438.pdf",
     "static/media/kiritocode1-npm.png": "/static/media/kiritocode1-npm.b9d21910cf79e10c680c.png",
     "static/media/tasky.png": "/static/media/tasky.bc120ebc2537d66a25bb.png",
     "static/media/bye.mp3": "/static/media/bye.9f0d9b3017bc494da852.mp3",
@@ -48,12 +48,12 @@
     "static/media/arrow_svg.svg": "/static/media/arrow_svg.6ca120f222e2b386b36a894bba2cab7c.svg",
     "index.html": "/index.html",
     "main.d8fde4d3.css.map": "/static/css/main.d8fde4d3.css.map",
-    "main.c98be1c2.js.map": "/static/js/main.c98be1c2.js.map",
+    "main.537d78a1.js.map": "/static/js/main.537d78a1.js.map",
     "845.ecc04588.chunk.js.map": "/static/js/845.ecc04588.chunk.js.map",
     "787.7086e8a4.chunk.js.map": "/static/js/787.7086e8a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8fde4d3.css",
-    "static/js/main.c98be1c2.js"
+    "static/js/main.537d78a1.js"
   ]
 }
