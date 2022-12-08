@@ -15,6 +15,6 @@ export default {
 </script>
 
 <template>
-  {{count}}9
+  {{count}}
   <button @click="count++">hello</button>
 </template>
